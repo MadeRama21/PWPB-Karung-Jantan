@@ -1,0 +1,109 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@400;500;700&family=Roboto+Mono:wght@300&display=swap');
+
+body {
+background-color: rgb(95, 100, 106);
+height: 300vh;
+display: flex;
+}
+/* Navbar */
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;  
+    padding: 1rem;
+}
+nav img {
+   width: 10rem;
+   height: 5rem;
+}
+.nav-kiri {
+    display: flex;
+    gap: 3rem;
+    align-items: center;  
+}
+.nav-kiri a {
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.nav-kiri a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;    
+  width: 0;
+  height: 2px;
+  background-color: black;
+}
+.nav-kiri a:hover::before {
+    width: 100%;
+}
+.nav-kiri a:hover {
+    color:black;
+    transition: 0.8s ease-in-out;
+    transition-delay: 0.4s;
+    border-radius: 8px;
+}
+.nav-kiri a::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none; 
+}
+.nav-kanan {
+    display: flex;
+    gap: 3rem;
+    align-items: center;   
+}       
+.nav-kanan a {
+    font-size: 2rem;
+    color: black;
+}
+/* Navbar end */
+
+/* content */
+.content {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.main-content {
+    margin-top: 25vh;
+    text-align: center;
+   
+}
+.main-content h1 {
+    color: rgb(216, 206, 206);
+    margin-bottom: 5vh;
+}
+.kiwkiw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kiwkiw h1{
+    width: 40%;
+}
+.content img {
+    width: 40%;
+}
+/* content */
