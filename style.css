@@ -216,6 +216,13 @@ footer {
     margin-top: 7px;
 }
 
+.sub-maps-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 7px;
+}
+
 .sub-maps img {
     height: 310px;
     border-top-left-radius: 8px;
@@ -228,6 +235,20 @@ footer {
     width: 780px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+.sub-maps-2 img {
+    height: 310px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.sub-kanan-2 iframe {
+    height: 307px;
+    width: 780px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     box-shadow: 0 0 10px black;
 }
 /* contact end */
