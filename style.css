@@ -111,3 +111,13 @@ nav ul li a {
 }
 /* content */
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+/* Footer end */
+
