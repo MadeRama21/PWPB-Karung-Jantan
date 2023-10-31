@@ -96,7 +96,6 @@ nav ul li a {
     align-items: center;
 }
 .main-content {
-    margin-top: 25vh;
     text-align: center;
    
 }
@@ -116,6 +115,58 @@ nav ul li a {
     width: 40%;
 }
 /* content */
+
+/* ABOUT */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content {
+    display: flex;
+}
+
+.about-text {
+    width: 500px;
+}
+
+.about-text h2 {
+    line-height: 35px;
+}
+
+.about-text p {
+    line-height: 20px;
+}
+
+.about-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pelayanan-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pelayanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-operasional {
+    display: flex;
+    flex-direction: column;
+}
+
+.operasional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /* Product Page */
 .title h1 {
@@ -158,11 +209,46 @@ nav ul li a {
 
 /* Footer */
 footer {
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(115, 111, 111);
     color: #fff;
     padding: 10px;
 }
+.footer-U1 img {
+    width: 15%;
+}
+.footer-U1 p {
+    width: 50%;
+}
 /* Footer end */
 
+/* contact */
+.main-maps p {
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.sub-maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.sub-maps img {
+    height: 310px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.sub-kanan iframe {
+    height: 307px;
+    width: 780px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+/* contact end */
