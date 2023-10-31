@@ -1,10 +1,10 @@
-*,
-html {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@400;500;700&family=Roboto+Mono:wght@300&display=swap');
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@400;500;700&family=Roboto+Mono:wght@300&display=swap');
 
 body {
 background-color: white;
@@ -208,16 +208,21 @@ nav ul li a {
     margin-bottom: 1.5rem;
 }
 
+.main1 {
+    margin-top: 6rem;
+}
+
 .product img {
-    width: 70%;
-    margin-bottom: 1.5rem;
-    border: 1.5px solid rgba(0, 0, 0, .7);
+    width: 80%;
+    margin-bottom: .5rem;
+    border: 1.5px solid rgba(0, 0, 0, .9);
     border-radius: 10px;
 }
 
 .product {
     margin: 2rem 2rem;
-    width: 50%;
+    width: 30%;
+    height: 50%;
 }
 
 .product-page {
@@ -243,6 +248,7 @@ footer {
     width: 15%;
 }
 .footer-U1 p {
+    margin-top: 7px;
     width: 50%;
 }
 .footer-U {
@@ -255,14 +261,15 @@ footer {
     display: block;
   }
   .footer-U2 h2 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1.3rem;
   }
   .wadah-U2 {
     flex-direction: column;
   }
   .footer-S a i{
-   font-size: 2rem;
+   font-size: 1.5rem;
+   gap: 10px;
   }
   .footer-S a {
     justify-content: center;
@@ -302,13 +309,21 @@ footer {
 .main-maps p {
     margin-top: 50px;
     font-size: 2rem;
+    font-weight: bolder;
 }
 
 .sub-maps {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 13px;
+}
+
+.sub-maps-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 13px;
 }
 
 .sub-maps img {
@@ -324,5 +339,40 @@ footer {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 10px black;
+}
+.sub-maps-2 img {
+    height: 310px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.sub-kanan-2 iframe {
+    height: 307px;
+    width: 780px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.sub-contact a > i {
+    margin-top: 10px;
+    font-size: 50px;
+    padding-left: 10px;
 }
 /* contact end */
