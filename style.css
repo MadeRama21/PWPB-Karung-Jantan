@@ -146,3 +146,11 @@ footer {
 }
 /* Footer end */
 
+/* contact */
+.sub-maps {
+    border-radius: 8px;
+    max-width: 80px;
+    max-height: 100px;
+    background-color: antiquewhite;
+}
+/* contact end */
