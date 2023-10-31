@@ -169,10 +169,30 @@ footer {
 /* Footer end */
 
 /* contact */
+.main-maps p {
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
 .sub-maps {
-    border-radius: 8px;
-    max-width: 80px;
-    max-height: 100px;
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.sub-maps img {
+    height: 310px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.sub-kanan iframe {
+    height: 307px;
+    width: 780px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px black;
 }
 /* contact end */
