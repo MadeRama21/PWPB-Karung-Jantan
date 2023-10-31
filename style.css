@@ -1,7 +1,8 @@
-*,
-html {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@400;500;700&family=Roboto+Mono:wght@300&display=swap');
 
@@ -171,19 +172,39 @@ nav ul li a {
 .title h1 {
     align-items: center;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .title h2 {
-    font-size: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
 }
 
 .product img {
-    width: 25%;
-    height: 25%;
+    width: 70%;
+    margin-bottom: 1.5rem;
+    border: 1.5px solid rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+.product {
+    margin: 2rem 2rem;
+    width: 50%;
+}
+
+.product-page {
+    display: flex;
+    text-align: center;
+}
+
+.product h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
 }
 
 /* Footer */
@@ -191,7 +212,7 @@ footer {
     margin-top: 20vh;
     display: flex;
     justify-content: center;
-    background-color: rgb(115, 111, 111);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 10px;
 }
@@ -201,6 +222,57 @@ footer {
 .footer-U1 p {
     width: 50%;
 }
+.footer-U {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;  
+  }
+
+  .footer-U2 {
+    display: block;
+  }
+  .footer-U2 h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  .wadah-U2 {
+    flex-direction: column;
+  }
+  .footer-S a i{
+   font-size: 2rem;
+  }
+  .footer-S a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(217, 217, 217, 0.2);
+    border-radius: 50%;
+  
+
+  }
+  .garis {
+    content: '';
+    width: 100%;
+    height: 0.2px;
+    background-color: #fff;
+
+  }
+ .copyrigth {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 50px;
+
+ }
+ .copyrigth p {
+    margin-right: 10px;
+ }
+ .copyrigth a {
+    color: white;
+ }
 /* Footer end */
 
 /* contact */
