@@ -136,35 +136,18 @@ nav ul li a {
 
 /* Footer */
 footer {
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(115, 111, 111);
     color: #fff;
     padding: 10px;
 }
-.footer-U {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;  
-  }
-  .footer-U1  {
-    margin-right: 15rem;
-  }
-  .footer-U1 p{
-    font-size: 1rem;
-  }
-  .footer-U2 {
-    display: block;
-   
-  }
-  .footer-U2 h1 {
-    margin-bottom: 10px;
-  }
-  .wadah-U2 {
-    flex-direction: column;
-  }
-  .footer-S a i{
-   font-size: 2rem;
-  }
+.footer-U1 img {
+    width: 15%;
+}
+.footer-U1 p {
+    width: 50%;
+}
 /* Footer end */
 
