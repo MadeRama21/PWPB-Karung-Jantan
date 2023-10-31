@@ -54,7 +54,7 @@ nav img {
   transition: .3s;
 }
 .nav-kiri a:hover::before {
-    width: 100%;
+    width: 70%;
     transition: .3s;
 }
 .nav-kiri a:hover {
@@ -128,10 +128,21 @@ nav ul li a {
 }
 
 .title h2 {
-    font-size: ;
+    font-size: 1rem;
 }
 
 .product img {
     width: 25%;
     height: 25%;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+/* Footer end */
+
