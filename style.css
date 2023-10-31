@@ -185,16 +185,21 @@ nav ul li a {
     margin-bottom: 1.5rem;
 }
 
+.main1 {
+    margin-top: 6rem;
+}
+
 .product img {
-    width: 70%;
-    margin-bottom: 1.5rem;
-    border: 1.5px solid rgba(0, 0, 0, .7);
+    width: 80%;
+    margin-bottom: .5rem;
+    border: 1.5px solid rgba(0, 0, 0, .9);
     border-radius: 10px;
 }
 
 .product {
     margin: 2rem 2rem;
-    width: 50%;
+    width: 30%;
+    height: 50%;
 }
 
 .product-page {
