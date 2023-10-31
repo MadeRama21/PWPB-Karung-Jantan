@@ -141,8 +141,9 @@ nav ul li a {
 .about-content2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .pelayanan-title {
@@ -151,10 +152,18 @@ nav ul li a {
     align-items: center;
 }
 
+.pelayanan-title i {
+    font-size: 3rem;
+}
+
 .pelayanan {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.pelayanan i {
+    font-size: 2rem;
 }
 
 .hero-operasional {
@@ -162,10 +171,24 @@ nav ul li a {
     flex-direction: column;
 }
 
-.operasional {
+.operasional-title {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.operasional-title i {
+    font-size: 3rem;
+}
+
+.jam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jam i {
+    font-size: 2rem;
 }
 
 /* Product Page */
