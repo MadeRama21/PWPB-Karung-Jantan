@@ -8,7 +8,6 @@ html {
 body {
 background-color: white;
 height: 300vh;
-display: flex;
 }
 
 section {
@@ -96,7 +95,6 @@ nav ul li a {
     align-items: center;
 }
 .main-content {
-    margin-top: 25vh;
     text-align: center;
    
 }
@@ -144,5 +142,29 @@ footer {
     color: #fff;
     padding: 10px;
 }
+.footer-U {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;  
+  }
+  .footer-U1  {
+    margin-right: 15rem;
+  }
+  .footer-U1 p{
+    font-size: 1rem;
+  }
+  .footer-U2 {
+    display: block;
+   
+  }
+  .footer-U2 h1 {
+    margin-bottom: 10px;
+  }
+  .wadah-U2 {
+    flex-direction: column;
+  }
+  .footer-S a i{
+   font-size: 2rem;
+  }
 /* Footer end */
 
