@@ -115,6 +115,58 @@ nav ul li a {
 }
 /* content */
 
+/* ABOUT */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content {
+    display: flex;
+}
+
+.about-text {
+    width: 500px;
+}
+
+.about-text h2 {
+    line-height: 35px;
+}
+
+.about-text p {
+    line-height: 20px;
+}
+
+.about-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pelayanan-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pelayanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-operasional {
+    display: flex;
+    flex-direction: column;
+}
+
+.operasional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Product Page */
 .title h1 {
     align-items: center;
