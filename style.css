@@ -36,9 +36,9 @@ nav img {
     align-items: center;  
 }
 .nav-kiri a {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 2px;
     position: relative;
@@ -120,14 +120,17 @@ nav ul li a {
 .about-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .about-content {
     display: flex;
+    justify-content: center;
 }
 
 .about-text {
-    width: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 
 .about-text h2 {
@@ -138,59 +141,89 @@ nav ul li a {
     line-height: 20px;
 }
 
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 60px;
+    background-color: aqua;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+}
+
 .about-content2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 
-.pelayanan-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.pelayanan-title i {
-    font-size: 3rem;
-}
-
-.pelayanan {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.pelayanan i {
-    font-size: 2rem;
-}
-
-.hero-operasional {
+.services {
     display: flex;
     flex-direction: column;
 }
 
-.operasional-title {
+.services-title {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.operasional-title i {
-    font-size: 3rem;
+.services-title h2 {
+    margin-left: 10px;
 }
 
-.jam {
+.services-title i {
+    font-size: 4rem;
+}
+
+.services-content {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 10px;
+    margin-left: 68px;
 }
 
-.jam i {
+.services-content i {
     font-size: 2rem;
+    margin-right: 10px;
 }
 
+.operational {
+    display: flex;
+    flex-direction: column;
+}
+
+.operational-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.operational-title i {
+    font-size: 4rem;
+}
+
+.operational-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.operational-time i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
 /* Product Page */
 .title h1 {
     align-items: center;
