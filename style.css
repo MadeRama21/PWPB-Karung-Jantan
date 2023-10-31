@@ -10,6 +10,12 @@ background-color: white;
 height: 300vh;
 display: flex;
 }
+
+section {
+    min-height: 100vh;
+    padding: 10rem 11% 2rem;
+}
+
 /* Navbar */
 nav {
     background-color: white;
@@ -110,3 +116,33 @@ nav ul li a {
     width: 40%;
 }
 /* content */
+
+/* Product Page */
+.title h1 {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.title h2 {
+    font-size: 1rem;
+}
+
+.product img {
+    width: 25%;
+    height: 25%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+/* Footer end */
+
