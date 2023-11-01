@@ -41,12 +41,7 @@ nav .box-nav  {
     justify-content: space-around;
     display: flex;
 }
-nav .wadah-nav {
-  
-}
-
-
-nav  img {
+nav img {
    width: 10rem;
    height: 5rem;
 }
@@ -404,7 +399,7 @@ footer {
 /* Footer end */
 
 /* contact */
-.main-maps p {
+.main-maps h3 {
     margin-top: 50px;
     font-size: 2rem;
     font-weight: bolder;
@@ -414,14 +409,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 13px;
+    margin-top: 16px;
 }
 
 .sub-maps-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-top: 13px;
+    margin-top: 16px;
 }
 
 .sub-maps img {
@@ -432,7 +427,7 @@ footer {
 }
 
 .sub-kanan iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -446,7 +441,7 @@ footer {
 }
 
 .sub-kanan-2 iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -461,6 +456,16 @@ footer {
     margin-top: 80px;
 }
 
+.contact::before {
+    content: '';
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    margin-bottom: 180px;
+}
+
 .main-contact {
     display: flex;
     flex-direction: column;
@@ -468,10 +473,16 @@ footer {
     margin-left: 45px;
 }
 
-.sub-contact a > i {
+.sub-contact {
+    margin-top: 15px;
+}
+
+.sub-contact a {
     margin-top: 10px;
     font-size: 50px;
     padding-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 /* contact end */
 
