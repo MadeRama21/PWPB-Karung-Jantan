@@ -116,7 +116,7 @@ nav ul li a {
 
 /* Landing Pages */
 header {
-    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.8)), url(asset/Bg-landing-pages/karung\ jantan.jpeg);
+    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.8)), url(asset/landing-page.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -136,32 +136,23 @@ header {
 }
 /* Landing pages end */
 
-/* content */
+/* content  index */
 .content {
     justify-content: center;
     display: flex;
     align-items: center;
 }
-.main-content {
+.main-content-index {
     text-align: center;
+    min-height: 100vh;
    
 }
 .main-content h1 {
     color: rgb(216, 206, 206);
     margin-bottom: 5vh;
 }
-.kiwkiw {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.kiwkiw h1{
-    width: 40%;
-}
-.content img {
-    width: 40%;
-}
-/* content */
+
+/* content index end */
 
 /* ABOUT */
 .about-section {
