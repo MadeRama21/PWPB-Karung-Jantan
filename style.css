@@ -7,9 +7,8 @@
     scroll-behavior: smooth;
 }
 
-body {
+body {  
 background-color: white;
-height: 300vh;
 }
 
 section {
@@ -172,13 +171,15 @@ header {
 .about-content {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .about-text {
-    width: 400px;
+    width: 425px;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    justify-content: center;
 }
 
 .about-text h2 {
@@ -213,8 +214,8 @@ button a {
 .about-content2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    justify-content: space-around;
+    margin-top: 110px;
 }
 
 .services {
@@ -231,29 +232,45 @@ button a {
 }
 
 .services-title h2 {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
-.services-title i {
-    font-size: 4rem;
+.garis-service::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 1.7%;
+    height: 4px;
+    rotate: 90deg;
+    margin-top: 11px;
 }
 
 .services-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 68px;
+    margin-top: 15px;
+    margin-left: 26px;
 }
 
 .services-content i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 10px;
 }
 
 .operational {
     display: flex;
     flex-direction: column;
+}
+
+.garis-operational {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 1.7%;
+    height: 4px;
+    rotate: 90deg;
+    margin-top: 11px;
 }
 
 .operational-title {
@@ -264,22 +281,21 @@ button a {
     letter-spacing: 2px;
 }
 
-.operational-title i {
-    font-size: 4rem;
-    margin-right: 10px;
+.operational-title h2 {
+    margin-left: 30px;
 }
 
 .operational-time {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 70px;
+    margin-top: 15px;
 }
 
 .operational-time i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 10px;
+    margin-left: 28px;
 }
 /* Product Page */
 .title h1 {
@@ -366,6 +382,8 @@ footer {
    gap: 10px;
   }
   .footer-S a {
+    text-decoration: none;
+    color: #FFFFFF;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -469,7 +487,8 @@ footer {
     border-radius: 10px;
     background-color: black;
     position: absolute;
-    margin-bottom: 180px;
+    margin-bottom: 185px;
+    margin-left: 37px;
 }
 
 .main-contact {
@@ -481,6 +500,7 @@ footer {
 
 .sub-contact {
     margin-top: 15px;
+    display: flex;
 }
 
 .sub-contact a {
