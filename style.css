@@ -471,6 +471,7 @@ footer {
     background-color: black;
     position: absolute;
     margin-bottom: 185px;
+    margin-left: 37px;
 }
 
 .main-contact {
@@ -482,6 +483,7 @@ footer {
 
 .sub-contact {
     margin-top: 15px;
+    display: flex;
 }
 
 .sub-contact a {
