@@ -7,9 +7,8 @@
     scroll-behavior: smooth;
 }
 
-body {
+body {  
 background-color: white;
-height: 300vh;
 }
 
 section {
@@ -383,6 +382,8 @@ footer {
    gap: 10px;
   }
   .footer-S a {
+    text-decoration: none;
+    color: #FFFFFF;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -486,7 +487,8 @@ footer {
     border-radius: 10px;
     background-color: black;
     position: absolute;
-    margin-bottom: 180px;
+    margin-bottom: 185px;
+    margin-left: 37px;
 }
 
 .main-contact {
@@ -498,6 +500,7 @@ footer {
 
 .sub-contact {
     margin-top: 15px;
+    display: flex;
 }
 
 .sub-contact a {
