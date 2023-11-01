@@ -26,6 +26,7 @@ nav {
     padding: 1rem;
     box-shadow: 0 1px 5px black;
 }
+
 nav img {
    width: 10rem;
    height: 5rem;
@@ -371,7 +372,7 @@ footer {
 }
 
 .sub-kanan iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -385,7 +386,7 @@ footer {
 }
 
 .sub-kanan-2 iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -400,6 +401,16 @@ footer {
     margin-top: 80px;
 }
 
+.contact::before {
+    content: '';
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    margin-bottom: 180px;
+}
+
 .main-contact {
     display: flex;
     flex-direction: column;
@@ -407,9 +418,15 @@ footer {
     margin-left: 45px;
 }
 
-.sub-contact a > i {
+.sub-contact {
+    margin-top: 15px;
+}
+
+.sub-contact a {
     margin-top: 10px;
     font-size: 50px;
     padding-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 /* contact end */
