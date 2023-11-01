@@ -128,9 +128,7 @@ header {
     display: flex;
     align-items: center;
 }
-.Landing  .box-content {
-    
-}
+
 .box-content h1 {
     color: white;
 }
@@ -184,7 +182,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     background:-webkit-linear-gradient(10deg, #000000, #ffffff);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 
