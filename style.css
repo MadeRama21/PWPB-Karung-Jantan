@@ -7,9 +7,8 @@
     scroll-behavior: smooth;
 }
 
-body {
+body {  
 background-color: white;
-height: 300vh;
 }
 
 section {
@@ -366,6 +365,8 @@ footer {
    gap: 10px;
   }
   .footer-S a {
+    text-decoration: none;
+    color: #FFFFFF;
     justify-content: center;
     align-items: center;
     text-align: center;
