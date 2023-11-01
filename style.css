@@ -218,6 +218,7 @@ button a {
 
 .operational-title i {
     font-size: 4rem;
+    margin-right: 10px;
 }
 
 .operational-time {
@@ -225,7 +226,7 @@ button a {
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 70px;
 }
 
 .operational-time i {
