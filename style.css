@@ -358,6 +358,11 @@ footer {
     font-weight: bolder;
 }
 
+.desc-contact {
+    display: flex;
+    justify-content: center;
+}
+
 .sub-maps {
     display: flex;
     flex-direction: row;
