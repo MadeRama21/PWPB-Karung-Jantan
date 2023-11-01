@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,13 +19,27 @@ section {
 
 /* Navbar */
 nav {
-    background-color: white;
-    position: fixed;
     width: 100%;
-    display: flex;
-    justify-content: space-around;  
+    justify-content:space-around;  
     padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.558);
     box-shadow: 0 1px 5px black;
+    position: fixed;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    z-index: 9999;
+}
+nav.scrolling-active {
+    background-color: white ;
+    padding: 30px 0 30px 0;
+}
+nav .box-nav  {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
 }
 nav img {
    width: 10rem;
@@ -36,12 +51,13 @@ nav img {
     align-items: center;  
 }
 .nav-kiri a {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 500;
     letter-spacing: 2px;
     position: relative;
+    /* text-shadow: 1px 2px 1px black; */
 }
 .nav-kiri a::before {
   content: '';
@@ -88,6 +104,38 @@ nav ul li a {
     color: black;
 }
 /* Navbar end */
+
+/* Menu */
+.menu-bar i{
+    font-size: 2.5rem;
+    display: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10rem;
+   
+}
+/* Menu end */
+
+/* Landing Pages */
+header {
+    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.8)), url(asset/Bg-landing-pages/karung\ jantan.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Landing {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.Landing  .box-content {
+    
+}
+.box-content h1 {
+    color: white;
+}
+/* Landing pages end */
 
 /* content */
 .content {
@@ -352,24 +400,29 @@ footer {
 /* Footer end */
 
 /* contact */
-.main-maps p {
+.main-maps h3 {
     margin-top: 50px;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.desc-contact {
+    display: flex;
+    justify-content: center;
 }
 
 .sub-maps {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 13px;
+    margin-top: 16px;
 }
 
 .sub-maps-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-top: 13px;
+    margin-top: 16px;
 }
 
 .sub-maps img {
@@ -380,7 +433,7 @@ footer {
 }
 
 .sub-kanan iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -394,7 +447,7 @@ footer {
 }
 
 .sub-kanan-2 iframe {
-    height: 307px;
+    height: 310px;
     width: 780px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -409,6 +462,16 @@ footer {
     margin-top: 80px;
 }
 
+.contact::before {
+    content: '';
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    margin-bottom: 180px;
+}
+
 .main-contact {
     display: flex;
     flex-direction: column;
@@ -416,9 +479,57 @@ footer {
     margin-left: 45px;
 }
 
-.sub-contact a > i {
+.sub-contact {
+    margin-top: 15px;
+}
+
+.sub-contact a {
     margin-top: 10px;
     font-size: 50px;
     padding-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 /* contact end */
+
+/* Responsive */
+@media screen and (max-width:990px) {
+    nav .box-nav .wadah-nav .menu-bar i {
+        display: block;
+    }
+    .wadah-nav .nav-kanan {
+        display: none;
+    }
+    nav .box-nav .wadah-nav .nav-kiri {
+       width: 100%;
+       position: absolute;
+       flex-direction: column;
+       justify-content: center;
+       display: flex;
+       padding: 2rem 0 2rem 0;
+       align-items: center;
+       margin-top: 3.1rem;
+       right: 45%;
+       color: black;
+       transform: translateX(45%);
+       -webkit-transform: translateX(45%);
+       -moz-transform: translateX(45%);
+       -ms-transform: translateX(45%);
+       -o-transform: translateX(45%);
+        opacity: 0;
+       transition: all 0.3s ease;
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       background-color: white;
+    }
+    nav .box-nav .nav-kiri.menu-active {
+        opacity: 1;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+    nav .logo img {
+        width: 8rem;
+        height: 4rem;
+    }
+}   
