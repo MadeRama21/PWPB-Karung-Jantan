@@ -14,6 +14,11 @@
     src: url(Font/LEMONMILK-Regular.ttf.otf);
 }
 
+@font-face {
+    font-family: AppleGaramond;
+    src: url(Font/AppleGaramond-LightItalic.ttf);
+}
+
 body {  
 background-color: white;
 }
