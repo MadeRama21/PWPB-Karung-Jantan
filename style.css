@@ -32,7 +32,7 @@ section {
 nav {
     width: 100%;
     justify-content:space-around;  
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.558);
     box-shadow: 0 1px 5px black;
     position: fixed;
@@ -129,7 +129,7 @@ nav ul li a {
 
 /* Landing Pages */
 header {
-    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.8)), url(asset/landing-page.png);
+    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.503)), url(asset/landing-page.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,14 +138,36 @@ header {
 .Landing {
     width: 100%;
     min-height: 100vh;
-    display: flex;
     align-items: center;
+    text-align: center;
+}
+.box-content {
+    padding-top: 35vh;
 }
 
 .box-content h1 {
     color: white;
-   
+    font-family: LemonMilk;
+    font-size: 3.4rem;
+    letter-spacing: 5px;
 }
+.box-content h2 {
+    color: white;
+    font-family: AppleGaramond;
+    font-size: 4rem;
+}
+.box-content p {
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+
+
 /* Landing pages end */
 
 /* content  index */
