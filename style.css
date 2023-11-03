@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat+Alternates:wght@400;500;700&family=Roboto+Mono:wght@300&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: LemonMilk;
+    src: url(Font/LEMONMILK-Regular.ttf.otf);
+}
+
+@font-face {
+    font-family: AppleGaramond;
+    src: url(Font/AppleGaramond-LightItalic.ttf);
 }
 
 body {  
@@ -131,10 +143,12 @@ header {
 
 .box-content h1 {
     color: white;
+   
 }
 /* Landing pages end */
 
 /* content  index */
+
 .content {
     justify-content: center;
     display: flex;
@@ -147,7 +161,6 @@ header {
 }
 .main-content h1 {
     color: rgb(216, 206, 206);
-    margin-bottom: 5vh;
 }
 
 /* content index end */
