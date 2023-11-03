@@ -170,6 +170,7 @@ header {
 .about-section {
     display: flex;
     flex-direction: column;
+
 }
 .about-content {
     display: flex;
@@ -324,10 +325,16 @@ button a {
     margin-left: 28px;
 }
 
+.section-kelebihan {
+    /* background-color: #797979; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .kelebihan {
     display: flex;
     flex-direction: column;
-    margin-top: 75px;
 }
 
 .kelebihan-title {
