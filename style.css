@@ -9,6 +9,11 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: LemonMilk;
+    src: url(Font/LEMONMILK-Regular.ttf.otf);
+}
+
 body {  
 background-color: white;
 }
