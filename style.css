@@ -62,9 +62,9 @@ nav img {
     align-items: center;  
 }
 .nav-kiri a {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: LemonMilk;
     color: rgb(0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
     position: relative;
@@ -81,7 +81,7 @@ nav img {
   transition: .3s;
 }
 .nav-kiri a:hover::before {
-    width: 80%;
+    width: 100%;
     transition: .3s;
 }
 .nav-kiri a:hover {
@@ -99,6 +99,7 @@ nav img {
     left: 0;
     bottom: -10px;
 }
+
 nav ul li {
     list-style: none;
 }
@@ -208,21 +209,33 @@ header {
 
 .about-text h3{
     color: #36454F;
+    font-family: AppleGaramond;
+    letter-spacing: 4px;
     line-height: 20px;
 }
 
 .about-text h2 {
     line-height: 50px;
     font-weight: 700;
+    font-family: LemonMilk;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background:-webkit-linear-gradient(10deg, #000000, #ffffff);
-    /* -webkit-background-clip: text; */
+    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about-text p {
     line-height: 22px;
+}
+
+.karungjantan {
+    font-weight: 700;
+    font-family: AppleGaramond;
+    letter-spacing: 3px;
+    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -331,6 +344,56 @@ button a {
     font-size: 1.5rem;
     margin-right: 10px;
     margin-left: 28px;
+}
+
+.kelebihan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.kelebihan-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.kelebihan-title h2 {
+    letter-spacing: 3px;
+    font-family: LemonMilk;
+}
+
+.kelebihan-title::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 260px;
+    background-color: black;
+}
+
+.kelebihan-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.kel-content {
+    margin: 20px;
+    text-align: center;
+}
+
+.kel-content h3 {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-family: LemonMilk;
+    letter-spacing: 4px;
 }
 
 /* Product Page */
@@ -499,21 +562,26 @@ footer {
 .desc-contact {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 39px;
 }
 
 .sub-maps {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .sub-maps-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
+}
+
+.main-maps p {
+    margin-top: 5px;
+    font-family: LemonMilk;
 }
 
 .sub-maps img {
@@ -521,6 +589,12 @@ footer {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0 0 10px black;
+    transition: .3s;
+}
+
+.sub-maps img:hover{
+    border-radius: 8px;
+    transform: scale(1.08);
 }
 
 .sub-kanan iframe {
@@ -535,6 +609,12 @@ footer {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 10px black;
+    transition: .3s;
+}
+
+.sub-maps-2 img:hover{
+    border-radius: 8px;
+    transform: scale(1.08);
 }
 
 .sub-kanan-2 iframe {
