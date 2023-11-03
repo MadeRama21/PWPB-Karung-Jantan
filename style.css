@@ -311,6 +311,46 @@ button a {
     margin-left: 28px;
 }
 
+.kelebihan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.kelebihan-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: LemonMilk;
+}
+
+.kelebihan-title::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 260px;
+    background-color: black;
+}
+
+.kelebihan-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.kel-content {
+    margin: 20px;
+    text-align: center;
+}
+
 /* Product Page */
 .title h1 {
     align-items: center;
