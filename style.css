@@ -62,9 +62,9 @@ nav img {
     align-items: center;  
 }
 .nav-kiri a {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: LemonMilk;
     color: rgb(0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
     position: relative;
@@ -309,6 +309,49 @@ button a {
     font-size: 1.5rem;
     margin-right: 10px;
     margin-left: 28px;
+}
+
+.kelebihan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.kelebihan-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.kelebihan-title h2 {
+    letter-spacing: 3px;
+    font-family: LemonMilk;
+}
+
+.kelebihan-title::after {
+    content: '';
+    width: 3%;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 260px;
+    background-color: black;
+}
+
+.kelebihan-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.kel-content {
+    margin: 20px;
+    text-align: center;
 }
 
 /* Product Page */
