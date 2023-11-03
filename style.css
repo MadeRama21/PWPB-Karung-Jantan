@@ -477,7 +477,7 @@ footer {
 .desc-contact {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 39px;
 }
 
 .sub-maps {
@@ -492,6 +492,10 @@ footer {
     flex-direction: row-reverse;
     justify-content: center;
     margin-top: 16px;
+}
+
+.main-maps p {
+    margin-top: 5px;
 }
 
 .sub-maps img {
