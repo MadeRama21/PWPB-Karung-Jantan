@@ -540,21 +540,26 @@ footer {
 .desc-contact {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 39px;
 }
 
 .sub-maps {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .sub-maps-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
+}
+
+.main-maps p {
+    margin-top: 5px;
+    font-family: LemonMilk;
 }
 
 .sub-maps img {
@@ -562,6 +567,12 @@ footer {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0 0 10px black;
+    transition: .3s;
+}
+
+.sub-maps img:hover{
+    border-radius: 8px;
+    transform: scale(1.08);
 }
 
 .sub-kanan iframe {
@@ -576,6 +587,12 @@ footer {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 10px black;
+    transition: .3s;
+}
+
+.sub-maps-2 img:hover{
+    border-radius: 8px;
+    transform: scale(1.08);
 }
 
 .sub-kanan-2 iframe {
