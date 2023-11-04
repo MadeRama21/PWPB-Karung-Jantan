@@ -18,9 +18,9 @@
     font-family: AppleGaramond;
     src: url(Font/AppleGaramond-LightItalic.ttf);
 }
-
+        
 body {  
-background-color: white;
+background-color: rgba(255, 255, 255, 0);
 }
 
 section {
@@ -149,17 +149,18 @@ header {
     color: white;
     font-family: LemonMilk;
     font-size: 3.4rem;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 .box-content h2 {
     color: white;
     font-family: AppleGaramond;
+    letter-spacing: 6px;
     font-size: 4rem;
 }
 .box-content p {
     margin-top: 1rem;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 100;
@@ -178,13 +179,134 @@ header {
     align-items: center;
 }
 .main-content-index {
-    text-align: center;
     min-height: 100vh;
+    display: flex;
+    position: relative;
    
 }
 .main-content h1 {
     color: rgb(216, 206, 206);
 }
+.landing {
+padding: 16rem 0 1rem 7rem;
+display: block;
+}
+.landing h1 {
+    font-size: 3rem;
+    font-family: LemonMilk;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 3.6rem;
+    margin-bottom: 0.5rem;
+
+}
+.landing button {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.landing p {
+    width: 85%;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.Main-Slider .slider {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    width: 100%;
+    height: 100%;
+    animation: slider 20s ease-in-out infinite ;
+
+
+}
+.Main-Slider .slider-wrapper {
+    width: 35rem;
+    height: 40rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.389);
+}
+
+.Main-Slider {
+    position: relative;
+    padding-top: 12rem;
+    margin-right: 4rem;
+}
+
+.Main-Slider #slide-1 {
+    background-image: url(Gallery/footage\ kj1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Main-Slider #slide-2 {
+    background-image: url(Gallery/footage\ kj2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Main-Slider #slide-3 {
+    background-image: url(Gallery/footage\ kj3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Main-Slider #slide-4 {
+    background-image: url(Gallery/footage\ kj4.jpg);
+    background-position: center;
+    background-size: cover;
+}   
+
+.Main-Slider .slide-button a {
+    background-color: rgb(100, 100, 100);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .3rem ;
+}
+.Main-Slider .slide-button {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+.slide-button a:hover {
+    box-shadow: 0px 0px 7px 4px rgb(0, 0, 0)
+}
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 
 /* content index end */
 
@@ -495,6 +617,8 @@ footer {
 .footer-U1 p {
     margin-top: 7px;
     width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 .footer-U {
     display: flex;
@@ -506,6 +630,7 @@ footer {
     display: block;
   }
   .footer-U2 h2 {
+    font-size: 1.4rem;
     margin-top: 2rem;
     margin-bottom: 1.3rem;
   }
