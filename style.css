@@ -18,6 +18,7 @@
     font-family: AppleGaramond;
     src: url(Font/AppleGaramond-LightItalic.ttf);
 }
+
         
 body {  
 background-color: rgba(255, 255, 255, 0);
@@ -332,8 +333,7 @@ display: block;
 
 .about-text h3{
     color: #36454F;
-    font-family: AppleGaramond;
-    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 20px;
 }
 
@@ -349,13 +349,14 @@ display: block;
 }
 
 .about-text p {
+    font-family: 'Montserrat', sans-serif;
     line-height: 22px;
 }
 
 .karungjantan {
     font-weight: 700;
-    font-family: AppleGaramond;
-    letter-spacing: 3px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
     background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -373,11 +374,13 @@ button {
 
 button:hover {
     transform: translateY(-5px);
+    background-color: #36454fad;
     transition: 0.3s;
 }
 
 button a {
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     color: #FFFFFF;
 }
@@ -402,10 +405,6 @@ button a {
     letter-spacing: 2px;
 }
 
-.services-title h2 {
-    margin-left: 30px;
-}
-
 .garis-service::after {
     content: '';
     position: absolute;
@@ -414,6 +413,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .services-content {
@@ -422,6 +422,10 @@ button a {
     align-items: center;
     margin-top: 15px;
     margin-left: 26px;
+}
+
+.services-content p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .services-content i {
@@ -442,6 +446,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .operational-title {
@@ -452,10 +457,6 @@ button a {
     letter-spacing: 2px;
 }
 
-.operational-title h2 {
-    margin-left: 30px;
-}
-
 .operational-time {
     display: flex;
     flex-direction: row;
@@ -463,10 +464,14 @@ button a {
     margin-top: 15px;
 }
 
+.operational-time p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .operational-time i {
     font-size: 1.5rem;
     margin-right: 10px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 
 .section-kelebihan {
@@ -859,7 +864,7 @@ footer {
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 80px;
 }
@@ -872,14 +877,12 @@ footer {
     background-color: black;
     position: absolute;
     margin-bottom: 185px;
-    margin-left: 37px;
 }
 
 .main-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 45px;
 }
 
 .sub-contact {
@@ -944,7 +947,7 @@ footer {
     .sub-kiri img {
         height: 280px;
     }
-    
+
     .sub-kanan-2 iframe{
         height: 280px;
         width: 300px;
@@ -1170,11 +1173,17 @@ footer {
         margin-bottom: 20px;
     }
 
+    .services-content {
+        margin-left: 0;
+    }
+
     .garis-service::after {
-        margin-left: 91px;
+        margin-left: 58px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-time {
@@ -1183,10 +1192,12 @@ footer {
     }
 
     .garis-operational {
-        margin-left: 158px;
+        margin-left: 125px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-title {
@@ -1198,8 +1209,11 @@ footer {
     }
 
     .kelebihan-title::after {
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
         margin-top: 275px;
+        margin-left: 4px;
     }
 
     .kelebihan-content {
@@ -1277,8 +1291,15 @@ footer {
         border-radius: 10px;
         background-color: black;
         position: absolute;
-        margin-bottom: 290px;
-        margin-left: 37px;
+        margin-bottom: 355px;
+
     }
 
+    .main-contact {
+        margin-bottom: 25px;
+    }
+
+    .main-contact a>i{
+        font-size: 60px;
+    }
 }
