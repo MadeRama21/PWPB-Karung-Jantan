@@ -402,10 +402,6 @@ button a {
     letter-spacing: 2px;
 }
 
-.services-title h2 {
-    margin-left: 30px;
-}
-
 .garis-service::after {
     content: '';
     position: absolute;
@@ -414,6 +410,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .services-content {
@@ -442,6 +439,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .operational-title {
@@ -450,10 +448,6 @@ button a {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.operational-title h2 {
-    margin-left: 30px;
 }
 
 .operational-time {
@@ -466,7 +460,7 @@ button a {
 .operational-time i {
     font-size: 1.5rem;
     margin-right: 10px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 
 .section-kelebihan {
@@ -949,6 +943,60 @@ footer {
     }
 }   
 
+@media screen and (max-width:430px) {
+    nav .box-nav .wadah-nav .menu-bar i {
+        display: block;
+    }
+    .wadah-nav .nav-kanan {
+        display: none;
+    }
+    nav .box-nav .wadah-nav .nav-kiri {
+       width: 100%;
+       position: absolute;
+       flex-direction: column;
+       justify-content: center;
+       display: flex;
+       padding: 2rem 0 2rem 0;
+       align-items: center;
+       margin-top: 2.8rem;
+       right: 45%;
+       color: black;
+       transform: translateX(45%);
+       -webkit-transform: translateX(45%);
+       -moz-transform: translateX(45%);
+       -ms-transform: translateX(45%);
+       -o-transform: translateX(45%);
+        opacity: 0;
+       transition: all 0.3s ease;
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       background-color: white;
+    }
+    nav .box-nav .nav-kiri.menu-active {
+        opacity: 1;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+    nav .logo img {
+        width: 7rem;
+        height: 3.5rem;
+    }
+    /* index */
+    /* index end */
+    .sub-kanan iframe{
+        height: 280px;
+        width: 300px;
+    }
+    .sub-kiri img {
+        height: 280px;
+    }
+    .sub-kanan-2 iframe{
+        height: 280px;
+        width: 300px;
+    }
+}
+
 /* HANDPHONE */
 @media screen and (max-width:600px) {
     /* ABOUT */
@@ -979,11 +1027,17 @@ footer {
         margin-bottom: 20px;
     }
 
+    .services-content {
+        margin-left: 0;
+    }
+
     .garis-service::after {
-        margin-left: 91px;
+        margin-left: 58px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-time {
@@ -992,10 +1046,12 @@ footer {
     }
 
     .garis-operational {
-        margin-left: 158px;
+        margin-left: 125px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-title {
@@ -1007,8 +1063,11 @@ footer {
     }
 
     .kelebihan-title::after {
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
         margin-top: 275px;
+        margin-left: 4px;
     }
 
     .kelebihan-content {
