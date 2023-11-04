@@ -991,6 +991,141 @@ footer {
         height: 3.5rem;
     }
     /* index */
+    .main-content-index {
+        min-height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+       
+    }
+    .main-content h1 {
+        color: rgb(216, 206, 206);
+    }
+    .landing {
+    display: block; 
+    padding: 3rem 0 0 0;
+    text-align: center;
+    }
+    .landing h1 {
+        font-size: 2rem;
+        font-family: LemonMilk;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 2.6rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    
+    }
+    .landing button {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .landing p {
+        text-align: justify;
+        width: 100%;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding: 0 1.8rem 0 1.8rem;
+    }
+  
+    .Main-Slider .slider {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        width: 100%;
+        height: 100%;
+        animation: slider 20s ease-in-out infinite ;
+    
+    
+    }
+    .Main-Slider .slider-wrapper {
+        width: 390px;
+        height: 29.5rem;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.389);
+    }
+    .main-content-index {
+        top: 0;
+    }
+    .Main-Slider {
+        position: relative;
+        padding-top: 0;
+    }
+    
+    .Main-Slider #slide-1 {
+        background-image: url(Gallery/footage\ kj1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .Main-Slider #slide-2 {
+        background-image: url(Gallery/footage\ kj2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .Main-Slider #slide-3 {
+        background-image: url(Gallery/footage\ kj3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .Main-Slider #slide-4 {
+        background-image: url(Gallery/footage\ kj4.jpg);
+        background-position: center;
+        background-size: cover;
+    }   
+    
+    .Main-Slider .slide-button a {
+        background-color: rgb(100, 100, 100);
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        margin: .3rem ;
+    }
+    .Main-Slider .slide-button {
+        position: absolute;
+        left: 45%;
+        bottom: 0%;
+    }
+    .slide-button a:hover {
+        box-shadow: 0px 0px 7px 4px rgb(0, 0, 0)
+    }
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(-100%);
+        }
+        20% {
+            transform: translateX(-100%);
+        }
+        30% {
+            transform: translateX(-200%);
+        }
+        40% {
+            transform: translateX(-200%);
+        }
+        50% {
+            transform: translateX(-200%);
+        }
+        60% {
+            transform: translateX(-300%);
+        }
+        70% {
+            transform: translateX(-300%);
+        }
+        80% {
+            transform: translateX(-300%);
+        }
+        90% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    
     /* index end */
     .sub-kanan iframe{
         height: 280px;
