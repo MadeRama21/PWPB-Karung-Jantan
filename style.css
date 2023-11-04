@@ -32,7 +32,7 @@ section {
 nav {
     width: 100%;
     justify-content:space-around;  
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.558);
     box-shadow: 0 1px 5px black;
     position: fixed;
@@ -81,7 +81,7 @@ nav img {
   transition: .3s;
 }
 .nav-kiri a:hover::before {
-    width: 80%;
+    width: 100%;
     transition: .3s;
 }
 .nav-kiri a:hover {
@@ -99,6 +99,7 @@ nav img {
     left: 0;
     bottom: -10px;
 }
+
 nav ul li {
     list-style: none;
 }
@@ -128,7 +129,7 @@ nav ul li a {
 
 /* Landing Pages */
 header {
-    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.8)), url(asset/landing-page.png);
+    background-image:linear-gradient(rgba(23, 22, 22, 0.8), rgba(23, 22, 22, 0.503)), url(asset/landing-page.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -137,14 +138,36 @@ header {
 .Landing {
     width: 100%;
     min-height: 100vh;
-    display: flex;
     align-items: center;
+    text-align: center;
+}
+.box-content {
+    padding-top: 35vh;
 }
 
 .box-content h1 {
     color: white;
-   
+    font-family: LemonMilk;
+    font-size: 3.4rem;
+    letter-spacing: 5px;
 }
+.box-content h2 {
+    color: white;
+    font-family: AppleGaramond;
+    font-size: 4rem;
+}
+.box-content p {
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+
+
 /* Landing pages end */
 
 /* content  index */
@@ -169,6 +192,7 @@ header {
 .about-section {
     display: flex;
     flex-direction: column;
+
 }
 .about-content {
     display: flex;
@@ -186,21 +210,33 @@ header {
 
 .about-text h3{
     color: #36454F;
+    font-family: AppleGaramond;
+    letter-spacing: 4px;
     line-height: 20px;
 }
 
 .about-text h2 {
     line-height: 50px;
     font-weight: 700;
+    font-family: LemonMilk;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background:-webkit-linear-gradient(10deg, #000000, #ffffff);
+    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about-text p {
     line-height: 22px;
+}
+
+.karungjantan {
+    font-weight: 700;
+    font-family: AppleGaramond;
+    letter-spacing: 3px;
+    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -311,10 +347,16 @@ button a {
     margin-left: 28px;
 }
 
+.section-kelebihan {
+    /* background-color: #797979; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .kelebihan {
     display: flex;
     flex-direction: column;
-    margin-top: 75px;
 }
 
 .kelebihan-title {
@@ -352,6 +394,13 @@ button a {
 .kel-content {
     margin: 20px;
     text-align: center;
+}
+
+.kel-content h3 {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-family: LemonMilk;
+    letter-spacing: 4px;
 }
 
 /* Product Page */
