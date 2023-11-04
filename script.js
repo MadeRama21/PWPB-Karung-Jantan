@@ -1,3 +1,4 @@
+//NAVIGATION BAR
 const menubar = document.querySelector(".menu-bar");
 const menunav = document.querySelector(".nav-kiri");
 
