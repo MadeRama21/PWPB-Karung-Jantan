@@ -280,10 +280,6 @@ button a {
     letter-spacing: 2px;
 }
 
-.services-title h2 {
-    margin-left: 30px;
-}
-
 .garis-service::after {
     content: '';
     position: absolute;
@@ -292,6 +288,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .services-content {
@@ -320,6 +317,7 @@ button a {
     height: 4px;
     rotate: 90deg;
     margin-top: 11px;
+    margin-left: -30px;
 }
 
 .operational-title {
@@ -328,10 +326,6 @@ button a {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.operational-title h2 {
-    margin-left: 30px;
 }
 
 .operational-time {
@@ -344,7 +338,7 @@ button a {
 .operational-time i {
     font-size: 1.5rem;
     margin-right: 10px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 
 .section-kelebihan {
@@ -747,11 +741,17 @@ footer {
         margin-bottom: 20px;
     }
 
+    .services-content {
+        margin-left: 0;
+    }
+
     .garis-service::after {
-        margin-left: 91px;
+        margin-left: 58px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-time {
@@ -760,10 +760,12 @@ footer {
     }
 
     .garis-operational {
-        margin-left: 158px;
+        margin-left: 125px;
         margin-top: 40px;
         rotate: 0deg;
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
     }
 
     .operational-title {
@@ -775,8 +777,11 @@ footer {
     }
 
     .kelebihan-title::after {
-        width: 3%;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
         margin-top: 275px;
+        margin-left: 4px;
     }
 
     .kelebihan-content {
