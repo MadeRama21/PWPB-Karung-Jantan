@@ -1009,6 +1009,7 @@ footer {
     display: block; 
     padding: 3rem 0 0 0;
     text-align: center;
+    box-shadow: 0 5px 10px black;
     }
     .landing h1 {
         font-size: 2rem;
