@@ -314,6 +314,7 @@ display: block;
 .about-section {
     display: flex;
     flex-direction: column;
+
 }
 .about-content {
     display: flex;
@@ -468,10 +469,18 @@ button a {
     margin-left: 28px;
 }
 
+.section-kelebihan {
+    /* background-color: #797979; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 .kelebihan {
     display: flex;
     flex-direction: column;
-    margin-top: 75px;
 }
 
 .kelebihan-title {
@@ -783,14 +792,15 @@ footer {
 
 .sub-contact a {
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 55px;
     padding-left: 10px;
     text-decoration: none;
     color: black;
 }
 /* contact end */
 
-/* Responsive */
+/* RESPONSIF */
+/* TAB?? */
 @media screen and (max-width:990px) {
     nav .box-nav .wadah-nav .menu-bar i {
         display: block;
@@ -830,4 +840,89 @@ footer {
         width: 7rem;
         height: 3.5rem;
     }
+    .sub-kanan iframe{
+        height: 280px;
+        width: 300px;
+    }
+    .sub-kiri img {
+        height: 280px;
+    }
+    .sub-kanan-2 iframe{
+        height: 280px;
+        width: 300px;
+    }
 }   
+
+/* HANDPHONE */
+@media screen and (max-width:600px) {
+    /* ABOUT */
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        margin: 0;
+        margin-top: 20px;
+        width: 350px;
+    }
+
+    .about-content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        margin-bottom: 75px;
+    }
+
+    .services-title {
+        margin-bottom: 20px;
+    }
+
+    .garis-service::after {
+        margin-left: 91px;
+        margin-top: 40px;
+        rotate: 0deg;
+        width: 3%;
+    }
+
+    .operational-time {
+        display: flex;
+        justify-content: center;
+    }
+
+    .garis-operational {
+        margin-left: 158px;
+        margin-top: 40px;
+        rotate: 0deg;
+        width: 3%;
+    }
+
+    .operational-title {
+        margin-bottom: 20px;
+    }
+
+    .section-kelebihan {
+        justify-content: center;
+    }
+
+    .kelebihan-title::after {
+        width: 3%;
+        margin-top: 275px;
+    }
+
+    .kelebihan-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kel-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
