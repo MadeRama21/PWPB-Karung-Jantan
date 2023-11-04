@@ -1046,7 +1046,7 @@ footer {
     .Main-Slider .slider-wrapper {
         width: 390px;
         height: 29.5rem;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.389);
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.53);
     }
     .main-content-index {
         top: 0;
