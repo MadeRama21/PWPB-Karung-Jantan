@@ -863,7 +863,7 @@ footer {
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 80px;
 }
@@ -876,14 +876,12 @@ footer {
     background-color: black;
     position: absolute;
     margin-bottom: 185px;
-    margin-left: 37px;
 }
 
 .main-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 45px;
 }
 
 .sub-contact {
@@ -948,7 +946,7 @@ footer {
     .sub-kiri img {
         height: 280px;
     }
-    
+
     .sub-kanan-2 iframe{
         height: 280px;
         width: 300px;
@@ -1157,8 +1155,15 @@ footer {
         border-radius: 10px;
         background-color: black;
         position: absolute;
-        margin-bottom: 290px;
-        margin-left: 37px;
+        margin-bottom: 355px;
+
     }
 
+    .main-contact {
+        margin-bottom: 25px;
+    }
+
+    .main-contact a>i{
+        font-size: 60px;
+    }
 }
