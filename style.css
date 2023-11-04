@@ -1022,4 +1022,73 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .sub-maps {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .sub-maps-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .sub-kiri img {
+        width: 350px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .sub-kanan iframe {
+        width: 350px;
+        height: 200px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .sub-kanan-2 iframe {
+        width: 350px;
+        height: 200px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .main-maps h3 {
+        font-size: 20px;
+    }
+
+    .main-maps p {
+        font-size: 15px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        max-width: 600px;
+    }
+
+    .contact::before {
+        content: '';
+        width: 100px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: black;
+        position: absolute;
+        margin-bottom: 290px;
+        margin-left: 37px;
+    }
+
 }
