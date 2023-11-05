@@ -964,6 +964,79 @@ footer {
         height: 280px;
         width: 300px;
     }
+    .main-content-index {
+        min-height: 100vh;
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+       
+    }
+    .main-content h1 {
+        color: rgb(216, 206, 206);
+    }
+    .box-content h1 {
+        font-size: 3rem;
+    }
+    .box-content p {
+        font-size: 1.3rem;
+        color: white;
+    }
+    .landing {
+    display: block; 
+    padding: 3rem 1.8rem 0 1.8rem;  
+    }
+    .landing h1 {
+        width: 100%;
+        font-size: 2rem;
+        font-family: LemonMilk;
+        letter-spacing: 2px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 2.6rem;
+        margin-bottom: 0.7rem;
+    
+    }
+    .T-Product {
+        text-align: center;
+        padding: 0 0 0 0rem;
+    }
+    .T-Product a button {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .landing p {
+        text-align: justify;
+        width: 100%;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding: 0 0 0 0;
+    }
+  
+    .Main-Slider .slider {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        animation: slider 20s ease-in-out infinite ;
+    
+    
+    }
+    .Main-Slider .slider-wrapper {
+        max-width: 768px;
+        height: 640px;
+        box-shadow: 0px 5px 5px rgba(72, 65, 65, 0.53);
+    }
+    .main-content-index {
+        top: 0;
+    }
+    .Main-Slider {
+        align-items: center;
+        justify-content: center;
+        display: flex;  
+        position: relative;
+        padding-top: 0;
+        margin-right: 0;
+    }
 }   
 
 @media screen and (max-width:430px) {
