@@ -141,6 +141,7 @@ header {
     min-height: 100vh;
     align-items: center;
     text-align: center;
+    box-shadow: 0 5px 10px black;
 }
 .box-content {
     padding-top: 35vh;
@@ -192,7 +193,17 @@ header {
 padding: 16rem 0 1rem 7rem;
 display: block;
 }
+.T-Product {
+    padding: 0 0 0 7rem;
+}
+.T-Product a button {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 .landing h1 {
+    width: 80%;
     font-size: 3rem;
     font-family: LemonMilk;
     letter-spacing: 2px;
@@ -202,12 +213,7 @@ display: block;
     margin-bottom: 0.5rem;
 
 }
-.landing button {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
+
 .landing p {
     width: 85%;
     letter-spacing: 2px;
@@ -346,6 +352,7 @@ display: block;
     background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .about-text p {
@@ -728,7 +735,9 @@ footer {
 .footer-U1 p {
     margin-top: 7px;
     width: 50%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;  
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.932);  
     
 }
 .footer-U {
@@ -750,7 +759,7 @@ footer {
   }
   .footer-S a i{
    font-size: 1.5rem;
-   gap: 10px;
+   gap: 14px;
   }
   .footer-S a {
     text-decoration: none;
@@ -765,6 +774,9 @@ footer {
     border-radius: 50%;
   
 
+  }
+  .footer-S a:hover {
+    background-color: rgb(134, 104, 104)
   }
   .garis {
     content: '';
@@ -1004,23 +1016,33 @@ footer {
     .main-content h1 {
         color: rgb(216, 206, 206);
     }
+    .box-content h1 {
+        font-size: 3rem;
+    }
+    .box-content p {
+        font-size: 1.3rem;
+        color: white;
+    }
     .landing {
     display: block; 
-    padding: 3rem 0 0 0;
-    text-align: center;
+    padding: 3rem 1.8rem 0 1.8rem;  
     }
     .landing h1 {
+        width: 100%;
         font-size: 2rem;
         font-family: LemonMilk;
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         line-height: 2.6rem;
-        text-align: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.7rem;
     
     }
-    .landing button {
+    .T-Product {
+        text-align: center;
+        padding: 0 0 0 0rem;
+    }
+    .T-Product a button {
         color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -1031,22 +1053,19 @@ footer {
         width: 100%;
         letter-spacing: 2px;
         line-height: 25px;
-        padding: 0 1.8rem 0 1.8rem;
+        padding: 0 0 0 0;
     }
   
     .Main-Slider .slider {
         display: grid;
         grid-template-columns: repeat(4, 100%);
-        width: 100%;
-        height: 100%;
         animation: slider 20s ease-in-out infinite ;
     
     
     }
     .Main-Slider .slider-wrapper {
-        width: 390px;
-        height: 29.5rem;
-        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.53);
+        max-width: 428px;
+        box-shadow: 0px 5px 5px rgba(72, 65, 65, 0.53);
     }
     .main-content-index {
         top: 0;
@@ -1141,7 +1160,92 @@ footer {
         height: 280px;
         width: 300px;
     }
+    footer {
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        padding: 10px;
+    }
+    .footer-U1 {
+        display: block; 
+    }
+    .footer-U1 img {
+        width: 40%;
+       
+    }
+    .footer-U1 p {
+        margin-top: 0px;
+        width: 100%;
+        font-family: 'Urbanist', sans-serif;    
+        font-size: 1rem;  
+        text-align: left;
+        
+    }
+    .footer-U {
+        display: block;
+        justify-content: space-around;
+        padding: 20px;  
+        
+      }
+    
+      .footer-U2 {
+        display: block;
+      }
+      .footer-U2 h2 {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 10px;
+      }
+      .wadah-U2 {
+        flex-direction: column;
+      }
+      .footer-S a i{
+       font-size: 1.5rem;
+    
+      }
+  
+      .footer-S a {
+        text-decoration: none;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: inline-flex;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgba(217, 217, 217, 0.2);
+        border-radius: 50%;
+ 
+    
+      }
+      .footer-S a:hover {
+        background-color: rgb(134, 104, 104)
+      }
+      .garis {
+        content: '';
+        width: 100%;
+        height: 0.2px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    
+      }
+     .copyrigth {
+        display: flex;  
+        font-size: 12px;
+        padding: 1rem;
+    
+     }
+     .copyrigth p {
+        margin-right: 10px;
+     }
+     .copyrigth a {
+        color: white;
+     }
 }
+
+
 
 /* HANDPHONE */
 @media screen and (max-width:600px) {
