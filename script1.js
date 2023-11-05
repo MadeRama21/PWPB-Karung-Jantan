@@ -1,4 +1,4 @@
-//PRODUCT PAGE
+//PRODUCT PAGE T-SHIRTS
 const wrapper = document.querySelector(".wrapper"); //scroll otomatis
 const carousel = document.querySelector(".carousel"); //utama
 const arrowBtns = document.querySelectorAll(".wrapper i"); //tombolnya bisa diklik
@@ -79,3 +79,149 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+//PRODUCT PAGE SHIRTS
+const wrapper1 = document.querySelector(".wrapper-satu");
+const carousel1 = document.querySelector(".carousel-satu"); 
+const arrowBtns1 = document.querySelectorAll(".wrapper-satu i"); 
+const firstCardWidth1 = carousel1.querySelector(".card-satu").offsetWidth;
+const carouselChildrens1 = [...carousel1.children];
+
+let isDragging1 = false, startX1, startScrollLeft1, timeoutId1;
+
+let cardPerView1 = Math.round(carousel1.offsetWidth / firstCardWidth1);
+
+carouselChildrens1.slice(-cardPerView1).reverse().forEach(card => {
+    carousel1.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+
+carouselChildrens1.slice(0, cardPerView1).forEach(card => {
+    carousel1.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtns1.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel1.scrollLeft += btn.id === "left-satu" ? -firstCardWidth1 : firstCardWidth1; 
+    })
+})
+
+const dragStart1 = (e) => {
+    isDragging1 = true;
+    carousel1.classList.add("dragging");
+    startX1 = e.pageX;
+    startScrollLeft1 = carousel1.scrollLeft;
+}
+
+const dragging1 = (e) => {
+    if(!isDragging1) return; 
+    carousel1.scrollLeft = startScrollLeft1 - (e.pageX - startX1);
+}
+
+const dragStop1 = () => {
+    isDragging1 = false;
+    carousel1.classList.remove("dragging");
+}
+
+const autoPlay1 = () => {
+    if(window.innerWidth < 400) return; 
+    timeoutId1 = setTimeout(() => carousel1.scrollLeft += firstCardWidth1, 2500);
+}
+autoPlay1();
+
+const infiniteScroll1 = () => {
+    if(carousel1.scrollLeft === 0) { 
+        carousel1.classList.add("no-transition");
+        carousel1.scrollLeft = carousel1.scrollWidth - (2 * carousel1.offsetWidth);
+        carousel1.classList.remove("no-transition");
+    } 
+    else if(Math.ceil(carousel1.scrollLeft) === carousel1.scrollWidth - carousel1.offsetWidth){ 
+        carousel1.classList.add("no-transition");
+        carousel1.scrollLeft = carousel1.offsetWidth;
+        carousel1.classList.remove("no-transition");
+    }
+
+    clearTimeout(timeoutId1);
+    if(!wrapper1.matches(":hover")) autoPlay1();
+}
+
+carousel1.addEventListener("mousedown", dragStart1);
+carousel1.addEventListener("mousemove", dragging1);
+document.addEventListener("mouseup", dragStop1);
+carousel1.addEventListener("scroll", infiniteScroll1);
+wrapper1.addEventListener("mouseenter", () => clearTimeout(timeoutId1));
+wrapper1.addEventListener("mouseleave", autoPlay1);
+
+
+
+//PRODUCT PAGE JACKET
+const wrapper2 = document.querySelector(".wrapper-dua");
+const carousel2 = document.querySelector(".carousel-dua"); 
+const arrowBtns2 = document.querySelectorAll(".wrapper-dua i"); 
+const firstCardWidth2 = carousel2.querySelector(".card-dua").offsetWidth;
+const carouselChildrens2 = [...carousel2.children];
+
+let isDragging2 = false, startX2, startScrollLeft2, timeoutId2;
+
+let cardPerView2 = Math.round(carousel2.offsetWidth / firstCardWidth2);
+
+carouselChildrens2.slice(-cardPerView2).reverse().forEach(card => {
+    carousel2.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+
+carouselChildrens2.slice(0, cardPerView2).forEach(card => {
+    carousel2.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtns2.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel2.scrollLeft += btn.id === "left-dua" ? -firstCardWidth2 : firstCardWidth2; 
+    })
+})
+
+const dragStart2 = (e) => {
+    isDragging2 = true;
+    carousel2.classList.add("dragging");
+    startX2 = e.pageX;
+    startScrollLeft2 = carousel2.scrollLeft;
+}
+
+const dragging2 = (e) => {
+    if(!isDragging2) return; 
+    carousel2.scrollLeft = startScrollLeft2 - (e.pageX - startX2);
+}
+
+const dragStop2 = () => {
+    isDragging2 = false;
+    carousel2.classList.remove("dragging");
+}
+
+const autoPlay2 = () => {
+    if(window.innerWidth < 400) return; 
+    timeoutId2 = setTimeout(() => carousel2.scrollLeft += firstCardWidth2, 2500);
+}
+autoPlay2();
+
+const infiniteScroll2 = () => {
+    if(carousel2.scrollLeft === 0) { 
+        carousel2.classList.add("no-transition");
+        carousel2.scrollLeft = carousel2.scrollWidth - (2 * carousel2.offsetWidth);
+        carousel2.classList.remove("no-transition");
+    } 
+    else if(Math.ceil(carousel2.scrollLeft) === carousel2.scrollWidth - carousel2.offsetWidth){ 
+        carousel2.classList.add("no-transition");
+        carousel2.scrollLeft = carousel2.offsetWidth;
+        carousel2.classList.remove("no-transition");
+    }
+
+    clearTimeout(timeoutId2);
+    if(!wrapper2.matches(":hover")) autoPlay2();
+}
+
+carousel2.addEventListener("mousedown", dragStart2);
+carousel2.addEventListener("mousemove", dragging2);
+document.addEventListener("mouseup", dragStop2);
+carousel2.addEventListener("scroll", infiniteScroll2);
+wrapper2.addEventListener("mouseenter", () => clearTimeout(timeoutId2));
+wrapper2.addEventListener("mouseleave", autoPlay2);

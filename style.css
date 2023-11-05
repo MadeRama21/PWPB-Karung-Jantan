@@ -586,7 +586,9 @@ button a {
     margin-top: 3rem;
 }
 
-.wrapper {
+.wrapper,
+.wrapper-satu,
+.wrapper-dua{
     margin-top: 2.8rem;
     margin-bottom: 5rem;
     display: flex;
@@ -597,7 +599,9 @@ button a {
     align-items: center;
 }
 
-.wrapper i {
+.wrapper i,
+.wrapper-satu i,
+.wrapper-dua i {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -615,12 +619,26 @@ button a {
 .wrapper i:first-child {
     left: -22px;
 }
+.wrapper-satu i:first-child {
+    left: -22px;
+}
+.wrapper-dua i:first-child {
+    left: -22px;
+}
 
 .wrapper i:last-child {
     right: -22px;
 }
+.wrapper-satu i:last-child {
+    right: -22px;
+}
+.wrapper-dua i:last-child {
+    right: -22px;
+}
 
-.wrapper .carousel {
+.wrapper .carousel,
+.wrapper-satu .carousel,
+.wrapper-dua .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -631,6 +649,7 @@ button a {
     scrollbar-width: 0;
 }
 
+/* Pengaruh JS */
 .carousel::-webkit-scrollbar {
     display: none;
 }
@@ -642,11 +661,11 @@ button a {
     flex-direction: column;
 }
 
-.carousel.no-transition {
+.carousel.no-transition{
     scroll-behavior: auto;
 }
 
-.carousel.dragging {
+.carousel.dragging{
     scroll-snap-type: none;
     scroll-behavior: auto;
 }
@@ -655,6 +674,7 @@ button a {
     cursor: grab;
     user-select: none;
 }
+/* Pengaruh JS */
 
 .carousel .card {
     scroll-snap-align: start;
