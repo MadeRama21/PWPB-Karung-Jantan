@@ -352,6 +352,7 @@ display: block;
     background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .about-text p {
