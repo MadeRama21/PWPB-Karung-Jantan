@@ -380,9 +380,62 @@ button a {
     font-size: 1rem;
     margin-bottom: 5px;
 }
-/* Review-timmy */
+/* Review */
 
-/* Review-timmy-end */
+.review-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.review-content {
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    color: gray;
+}
+
+.review-content  img {
+    width: 300px;
+}
+
+.review-text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.user {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.user img {
+    width: 50px;
+}
+
+.user-text h1 {
+    color: black;
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Review end */
 
 /* Footer */
 footer {
