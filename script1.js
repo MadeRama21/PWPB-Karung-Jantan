@@ -225,3 +225,149 @@ document.addEventListener("mouseup", dragStop2);
 carousel2.addEventListener("scroll", infiniteScroll2);
 wrapper2.addEventListener("mouseenter", () => clearTimeout(timeoutId2));
 wrapper2.addEventListener("mouseleave", autoPlay2);
+
+
+
+//PRODUCT PAGE VARSITY JACKET
+const wrapper3 = document.querySelector(".wrapper-tiga");
+const carousel3 = document.querySelector(".carousel-tiga"); 
+const arrowBtns3 = document.querySelectorAll(".wrapper-tiga i"); 
+const firstCardWidth3 = carousel3.querySelector(".card-tiga").offsetWidth;
+const carouselChildrens3 = [...carousel3.children];
+
+let isDragging3 = false, startX3, startScrollLeft3, timeoutId3;
+
+let cardPerView3 = Math.round(carousel3.offsetWidth / firstCardWidth3);
+
+carouselChildrens3.slice(-cardPerView3).reverse().forEach(card => {
+    carousel3.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+
+carouselChildrens3.slice(0, cardPerView2).forEach(card => {
+    carousel3.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtns3.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel3.scrollLeft += btn.id === "left-tiga" ? -firstCardWidth3 : firstCardWidth3; 
+    })
+})
+
+const dragStart3 = (e) => {
+    isDragging3 = true;
+    carousel3.classList.add("dragging");
+    startX3 = e.pageX;
+    startScrollLeft3 = carousel3.scrollLeft;
+}
+
+const dragging3 = (e) => {
+    if(!isDragging3) return; 
+    carousel3.scrollLeft = startScrollLeft3 - (e.pageX - startX3);
+}
+
+const dragStop3 = () => {
+    isDragging3 = false;
+    carousel3.classList.remove("dragging");
+}
+
+const autoPlay3 = () => {
+    if(window.innerWidth < 400) return; 
+    timeoutId3 = setTimeout(() => carousel3.scrollLeft += firstCardWidth3, 2500);
+}
+autoPlay3();
+
+const infiniteScroll3 = () => {
+    if(carousel3.scrollLeft === 0) { 
+        carousel3.classList.add("no-transition");
+        carousel3.scrollLeft = carousel3.scrollWidth - (2 * carousel3.offsetWidth);
+        carousel3.classList.remove("no-transition");
+    } 
+    else if(Math.ceil(carousel3.scrollLeft) === carousel3.scrollWidth - carousel3.offsetWidth){ 
+        carousel3.classList.add("no-transition");
+        carousel3.scrollLeft = carousel3.offsetWidth;
+        carousel3.classList.remove("no-transition");
+    }
+
+    clearTimeout(timeoutId3);
+    if(!wrapper3.matches(":hover")) autoPlay3();
+}
+
+carousel3.addEventListener("mousedown", dragStart3);
+carousel3.addEventListener("mousemove", dragging3);
+document.addEventListener("mouseup", dragStop3);
+carousel3.addEventListener("scroll", infiniteScroll3);
+wrapper3.addEventListener("mouseenter", () => clearTimeout(timeoutId3));
+wrapper3.addEventListener("mouseleave", autoPlay3);
+
+
+
+//PRODUCT PAGE THROUSERS AND SHORTS
+const wrapper4 = document.querySelector(".wrapper-empat");
+const carousel4 = document.querySelector(".carousel-empat"); 
+const arrowBtns4 = document.querySelectorAll(".wrapper-empat i"); 
+const firstCardWidth4 = carousel4.querySelector(".card-empat").offsetWidth;
+const carouselChildrens4 = [...carousel4.children];
+
+let isDragging4 = false, startX4, startScrollLeft4, timeoutId4;
+
+let cardPerView4 = Math.round(carousel3.offsetWidth / firstCardWidth3);
+
+carouselChildrens4.slice(-cardPerView4).reverse().forEach(card => {
+    carousel4.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+
+carouselChildrens4.slice(0, cardPerView2).forEach(card => {
+    carousel4.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtns4.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel4.scrollLeft += btn.id === "left-empat" ? -firstCardWidth4 : firstCardWidth4; 
+    })
+})
+
+const dragStart4 = (e) => {
+    isDragging4 = true;
+    carousel4.classList.add("dragging");
+    startX4 = e.pageX;
+    startScrollLeft4 = carousel4.scrollLeft;
+}
+
+const dragging4 = (e) => {
+    if(!isDragging4) return; 
+    carousel4.scrollLeft = startScrollLeft4 - (e.pageX - startX4);
+}
+
+const dragStop4 = () => {
+    isDragging4 = false;
+    carousel4.classList.remove("dragging");
+}
+
+const autoPlay4 = () => {
+    if(window.innerWidth < 400) return; 
+    timeoutId4 = setTimeout(() => carousel4.scrollLeft += firstCardWidth4, 2500);
+}
+autoPlay4();
+
+const infiniteScroll4 = () => {
+    if(carousel4.scrollLeft === 0) { 
+        carousel4.classList.add("no-transition");
+        carousel4.scrollLeft = carousel4.scrollWidth - (2 * carousel4.offsetWidth);
+        carousel4.classList.remove("no-transition");
+    } 
+    else if(Math.ceil(carousel4.scrollLeft) === carousel4.scrollWidth - carousel4.offsetWidth){ 
+        carousel4.classList.add("no-transition");
+        carousel4.scrollLeft = carousel4.offsetWidth;
+        carousel4.classList.remove("no-transition");
+    }
+
+    clearTimeout(timeoutId4);
+    if(!wrapper4.matches(":hover")) autoPlay4();
+}
+
+carousel4.addEventListener("mousedown", dragStart4);
+carousel4.addEventListener("mousemove", dragging4);
+document.addEventListener("mouseup", dragStop4);
+carousel4.addEventListener("scroll", infiniteScroll4);
+wrapper4.addEventListener("mouseenter", () => clearTimeout(timeoutId4));
+wrapper4.addEventListener("mouseleave", autoPlay4);
