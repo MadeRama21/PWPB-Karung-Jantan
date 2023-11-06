@@ -554,7 +554,7 @@ button a {
     position: absolute;
     top: 14.5rem;
     height: 5px;
-    width: 5rem;
+    width: 4rem;
     background-color: black;
     left: 50%;
     transform: translateX(-50%);
@@ -593,7 +593,11 @@ button a {
     margin-top: 3rem;
 }
 
-.wrapper {
+.wrapper,
+.wrapper-satu,
+.wrapper-dua,
+.wrapper-tiga,
+.wrapper-empat {
     margin-top: 2.8rem;
     margin-bottom: 5rem;
     display: flex;
@@ -604,7 +608,11 @@ button a {
     align-items: center;
 }
 
-.wrapper i {
+.wrapper i,
+.wrapper-satu i,
+.wrapper-dua i,
+.wrapper-tiga i,
+.wrapper-empat i {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -622,12 +630,40 @@ button a {
 .wrapper i:first-child {
     left: -22px;
 }
+.wrapper-satu i:first-child {
+    left: -22px;
+}
+.wrapper-dua i:first-child {
+    left: -22px;
+}
+.wrapper-tiga i:first-child {
+    left: -22px;
+}
+.wrapper-empat i:first-child {
+    left: -22px;
+}
 
 .wrapper i:last-child {
     right: -22px;
 }
+.wrapper-satu i:last-child {
+    right: -22px;
+}
+.wrapper-dua i:last-child {
+    right: -22px;
+}
+.wrapper-tiga i:last-child {
+    right: -22px;
+}
+.wrapper-empat i:last-child {
+    right: -22px;
+}
 
-.wrapper .carousel {
+.wrapper .carousel,
+.wrapper-satu .carousel,
+.wrapper-dua .carousel,
+.wrapper-tiga .carousel,
+.wrapper-empat .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -638,6 +674,7 @@ button a {
     scrollbar-width: 0;
 }
 
+/* Pengaruh JS */
 .carousel::-webkit-scrollbar {
     display: none;
 }
@@ -649,11 +686,11 @@ button a {
     flex-direction: column;
 }
 
-.carousel.no-transition {
+.carousel.no-transition{
     scroll-behavior: auto;
 }
 
-.carousel.dragging {
+.carousel.dragging{
     scroll-snap-type: none;
     scroll-behavior: auto;
 }
@@ -662,14 +699,18 @@ button a {
     cursor: grab;
     user-select: none;
 }
+/* Pengaruh JS */
 
 .carousel .card {
     scroll-snap-align: start;
+    margin: 5px 0;
     height: 342px;
     padding-bottom: 15px;
     list-style: none;
     background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .23);
+    /* border: 1px solid black; */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -678,10 +719,11 @@ button a {
 }
 
 .card .img img {
-    width: 55%;
+    width: 56%;
     object-fit: cover;
     border: 4px solid #fff;
 }
+
 
 .card .list h3 {
     font-weight: 500;
@@ -697,22 +739,82 @@ button a {
 }
 
 @media screen and (max-width: 900px) {
-    .wrapper .carousel {
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .title h1::after {
+        top: 13.5rem;
+    }
+
+    .main h2 {
+        font-size: 1.7rem;
+    }
+
+    .wrapper,
+    .wrapper-satu,
+    .wrapper-dua,
+    .wrapper-tiga,
+    .wrapper-empat {
+        margin-top: 1rem;
+    }
+
+    .wrapper .carousel,
+    .wrapper-satu .carousel,
+    .wrapper-dua .carousel,
+    .wrapper-tiga .carousel,
+    .wrapper-empat .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
     .card .img img {
-        width: 60%;
+        width: 76%;
+    }
+
+    .card .list h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card .list span {
+        font-size: .8rem;
+        text-align: left;
+        justify-content: left;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper .carousel {
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper,
+    .wrapper-satu,
+    .wrapper-dua,
+    .wrapper-tiga,
+    .wrapper-empat {
+        margin-top: 1rem;
+    }
+
+    .wrapper .carousel,
+    .wrapper-satu .carousel,
+    .wrapper-dua .carousel,
+    .wrapper-tiga .carousel,
+    .wrapper-empat .carousel {
         grid-auto-columns: 100%;
     }
 
     .card .img img {
-        width: 38%;
+        width: 72%;
+    }
+
+    .card .list h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card .list span {
+        font-size: .8rem;
+        text-align: left;
+        justify-content: left;
     }
 }
 
