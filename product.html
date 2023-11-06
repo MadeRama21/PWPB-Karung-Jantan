@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="logo/icon website karung jantan.jpeg">
+    <script src="script1.js" defer></script>
 </head>
 
 <body>
@@ -48,108 +49,256 @@
     <!-- Navbar end -->
 
     <!-- Product Page  -->
-    <section class="title">
-        <div class="main">
+    <section class="product">
+        <div class="title">
             <h1> Product </h1>
-            <h2> T-Shirt </h2>
-            <div class="product-page">
-                <div class="product">
-                    <div class="image">
-                        <img src="asset/baju/Baju 1.jpeg" alt="">
-                    </div>
-                    <h4> "KNIFE" Oversize T-Shirt Wash </h4>
-                    <h4> Rp.63.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/baju/Baju 2.jpeg" alt="">
-                    <h4> "FLOWER" Oversize T-Shirt </h4>
-                    <h4> Rp63.000</h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/baju/Baju 3.jpeg" alt="">
-                    <h4> "FRADE" Oversize T-Shirt </h4>
-                    <h4> Rp63.000 </h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="main1">
-            <h2> Jacket </h2>
-            <div class="product-page">
-                <div class="product">
-                    <div class="image">
-                        <img src="asset/jacket/Jacket 1.jpeg" alt="">
-                    </div>
-                    <h4> "RAISED" Jacket Vintage Distro </h4>
-                    <h4> Rp116.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/jacket/Jacket 2.jpeg" alt="">
-                    <h4> "MISERY" Jacket Vintage Distro </h4>
-                    <h4> Rp116.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/jacket/Jacket 3.jpeg" alt="">
-                    <h4> "BLACK-WHITE 9" Jacket Vintage Distro </h4>
-                    <h4> Rp116.000 </h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="main1">
-            <h2> Shirts </h2>
-            <div class="product-page">
-                <div class="product">
-                    <div class="image">
-                        <img src="asset/kemeja/kemeja 1.jpeg" alt="">
-                    </div>
-                    <h4> Black Corduroy Oversize Shirt </h4>
-                    <h4> Rp110.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/kemeja/kemeja 2.jpeg" alt="">
-                    <h4> Brown Corduroy Oversize Shirt </h4>
-                    <h4> Rp110.000</h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/kemeja/kemeja 3.jpeg" alt="">
-                    <h4> Plain Short Shirt </h4>
-                    <h4> Rp92.000</h4>
+            <div class="main">
+                <h2> T-Shirts </h2>
+                <div class="wrapper">
+                    <i id="left" class='bx bxs-chevron-left'></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 1.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 2.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 3.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 4.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 5.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img"> <img src="asset/baju/Baju 6.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right" class='bx bxs-chevron-right'></i>
                 </div>
             </div>
-        </div>
 
-        <div class="main1">
-            <h2> Shorts and Trousers </h2>
-            <div class="product-page">
-                <div class="product">
-                    <div class="image">
-                        <img src="asset/celana/celana panjang 1.jpeg" alt="">
-                    </div>
-                    <h4> Joggerpant </h4>
-                    <h4> Rp88.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/celana/celana panjang 2.jpeg" alt="">
-                    <h4> Longpant Jeans Non-Stretch </h4>
-                    <h4> Rp142.000 </h4>
-                </div>
-
-                <div class="product">
-                    <img src="asset/celana/celana panjang 3.jpeg" alt="">
-                    <h4> Longpant Chino List </h4>
-                    <h4> Rp90.000</h4>
+            <div class="main satu">
+                <h2> Shirts </h2>
+                <div class="wrapper-satu">
+                    <i id="left-satu" class='bx bxs-chevron-left'></i>
+                    <ul class="carousel carousel-satu">
+                        <li class="card card-satu">
+                            <div class="img"> <img src="asset/kemeja/kemeja 1.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-satu">
+                            <div class="img"> <img src="asset/kemeja/kemeja 2.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-satu">
+                            <div class="img"> <img src="asset/kemeja/kemeja 3.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-satu">
+                            <div class="img"> <img src="asset/kemeja/kemeja 4.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right-satu" class='bx bxs-chevron-right'></i>
                 </div>
             </div>
-        </div>
 
+            <div class="main satu">
+                <h2> Jacket </h2>
+                <div class="wrapper-dua">
+                    <i id="left-dua" class='bx bxs-chevron-left'></i>
+                    <ul class="carousel carousel-dua">
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 1.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 2.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 3.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 4.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 5.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-dua">
+                            <div class="img"> <img src="asset/jacket/Jacket 6.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right-dua" class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+            <div class="main satu">
+                <h2> Varsity Jacket </h2>
+                <div class="wrapper-tiga">
+                    <i id="left-tiga" class='bx bxs-chevron-left'></i>
+                    <ul class="carousel carousel-tiga">
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_1.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_2.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_3.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_4.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_5.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-tiga">
+                            <div class="img"> <img src="asset/varsity/varsity_6.png" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right-tiga" class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+            <div class="main satu">
+                <h2> Throusers and Shorts </h2>
+                <div class="wrapper-empat">
+                    <i id="left-empat" class='bx bxs-chevron-left'></i>
+                    <ul class="carousel carousel-empat">
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana panjang 1.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana panjang 2.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana panjang 3.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana pendek 1.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana pendek 2.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                        <li class="card card-empat">
+                            <div class="img"> <img src="asset/celana/celana pendek 3.jpeg" alt="img" draggable="false"></div>
+                            <div class="list">
+                                <h3> Baju Karung Jantan </h3>
+                                <span> Rp63.000 </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right-empat" class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Footer  -->
@@ -158,13 +307,14 @@
             <div class="footer-U">
                 <div class="footer-U1">
                     <img src="logo/logokarungjantan-white.png" alt="">
-                    <h2>Karung Jantan</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea nulla excepturi adipisci
-                        perspiciatis! Obcaecati voluptate modi delectus laudantium quisquam distinctio?</p>
+                    <h2></h2>
+                    <p>Pusat outfit Pria dibali yang menjual outfit pria yg sangat murah dibandingkan dengan brand-brand
+                        lain di
+                        indonesia, harganya mulai dari 15 ribuan. </p>
                 </div>
                 <div class="wadah-U2">
                     <div class="footer-U2">
-                        <h2>SOCIAL MEDIA</h2>
+                        <h2>FOLLOW US</h2>
                     </div>
                     <div class="footer-S">
                         <a href="https://www.instagram.com/karungjantan/">
@@ -189,7 +339,7 @@
                 <p>
                     &copy; Copyright 2023. Made by
                 </p>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://linktr.ee/Pemuda_Kodya?utm_source=linktree_admin_share">
                     -Pemuda Kodya Group-
                 </a>
             </div>
