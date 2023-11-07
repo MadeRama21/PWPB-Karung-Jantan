@@ -371,3 +371,76 @@ document.addEventListener("mouseup", dragStop4);
 carousel4.addEventListener("scroll", infiniteScroll4);
 wrapper4.addEventListener("mouseenter", () => clearTimeout(timeoutId4));
 wrapper4.addEventListener("mouseleave", autoPlay4);
+
+
+
+//PRODUCT PAGE CAP AND HAT
+const wrapper5 = document.querySelector(".wrapper-lima");
+const carousel5 = document.querySelector(".carousel-lima"); 
+const arrowBtns5 = document.querySelectorAll(".wrapper-lima i"); 
+const firstCardWidth5 = carousel5.querySelector(".card-lima").offsetWidth;
+const carouselChildrens5 = [...carousel5.children];
+
+let isDragging5 = false, startX5, startScrollLeft5, timeoutId5;
+
+let cardPerView5 = Math.round(carousel3.offsetWidth / firstCardWidth3);
+
+carouselChildrens5.slice(-cardPerView5).reverse().forEach(card => {
+    carousel5.insertAdjacentHTML("afterbegin", card.outerHTML);
+})
+
+carouselChildrens5.slice(0, cardPerView2).forEach(card => {
+    carousel5.insertAdjacentHTML("beforeend", card.outerHTML);
+})
+
+arrowBtns5.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel5.scrollLeft += btn.id === "left-lima" ? -firstCardWidth5 : firstCardWidth5; 
+    })
+})
+
+const dragStart5 = (e) => {
+    isDragging5 = true;
+    carousel5.classList.add("dragging");
+    startX5 = e.pageX;
+    startScrollLeft5 = carousel5.scrollLeft;
+}
+
+const dragging5 = (e) => {
+    if(!isDragging5) return; 
+    carousel5.scrollLeft = startScrollLeft5 - (e.pageX - startX5);
+}
+
+const dragStop5 = () => {
+    isDragging5 = false;
+    carousel5.classList.remove("dragging");
+}
+
+const autoPlay5 = () => {
+    if(window.innerWidth < 400) return; 
+    timeoutId5 = setTimeout(() => carousel5.scrollLeft += firstCardWidth5, 2500);
+}
+autoPlay5();
+
+const infiniteScroll5 = () => {
+    if(carousel5.scrollLeft === 0) { 
+        carousel5.classList.add("no-transition");
+        carousel5.scrollLeft = carousel5.scrollWidth - (2 * carousel5.offsetWidth);
+        carousel5.classList.remove("no-transition");
+    } 
+    else if(Math.ceil(carousel5.scrollLeft) === carousel5.scrollWidth - carousel5.offsetWidth){ 
+        carousel5.classList.add("no-transition");
+        carousel5.scrollLeft = carousel5.offsetWidth;
+        carousel5.classList.remove("no-transition");
+    }
+
+    clearTimeout(timeoutId5);
+    if(!wrapper5.matches(":hover")) autoPlay5();
+}
+
+carousel5.addEventListener("mousedown", dragStart5);
+carousel5.addEventListener("mousemove", dragging5);
+document.addEventListener("mouseup", dragStop5);
+carousel5.addEventListener("scroll", infiniteScroll5);
+wrapper5.addEventListener("mouseenter", () => clearTimeout(timeoutId5));
+wrapper5.addEventListener("mouseleave", autoPlay5);
