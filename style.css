@@ -195,7 +195,7 @@ header {
     color: rgb(216, 206, 206);
 }
 .landing {
-padding: 20rem 0 1rem 7rem;
+padding: 17rem 0 1rem 7rem;
 display: block;
 }
 .T-Product {
@@ -326,12 +326,17 @@ display: block;
 .about-section {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
 }
 .about-content {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+.about-content img {
+    border-radius:  20px 2px 2px 20px;
 }
 
 .about-text {
@@ -528,12 +533,13 @@ button a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
 .kel-content {
-    margin: 20px;
+    /* margin: 20px; */
+    padding: 0 25px 25px;
     text-align: center;
 }
 
@@ -1106,7 +1112,7 @@ footer {
 
 /* RESPONSIF */
 /* TAB?? */
-@media screen and (max-width:990px) {
+@media screen and (max-width:900px) {
     nav .box-nav .wadah-nav .menu-bar i {
         display: block;
     }
@@ -1162,7 +1168,6 @@ footer {
         display: flex;
         position: relative;
         flex-direction: column-reverse;
-       
     }
     .main-content h1 {
         color: rgb(216, 206, 206);
@@ -1176,20 +1181,20 @@ footer {
     }
     .landing {
     display: block; 
-    padding: 3rem 1.8rem 0 1.8rem;  
+    padding: 4rem 4rem 3rem 4rem;  
     }
     .content-indx-1 {
         padding-top: 4rem;
     }
     .landing h1 {
         width: 100%;
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: LemonMilk;
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        line-height: 2.6rem;
-        margin-bottom: 0.7rem;
+        line-height: 3.3rem;
+        margin-bottom: 1.5rem;
     
     }
     .T-Product {
@@ -1201,9 +1206,20 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         letter-spacing: 2px;
+        width: 200px;
+        height: 70px;
+        margin-top: 20px;
+        background-color: #36454F;
+        border-style: none;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-size: 1.2rem;
+        
     }
+   
     .landing p {
         text-align: justify;
+        font-size: 1.4rem;
         width: 100%;
         letter-spacing: 2px;
         line-height: 25px;
@@ -1218,21 +1234,28 @@ footer {
     
     }
     .Main-Slider .slider-wrapper {
-        max-width: 768px;
-        height: 640px;
         box-shadow: 0px 5px 5px rgba(72, 65, 65, 0.53);
+        width: 990px;
+        height: 900px;
+
     }
     .main-content-index {
-        top: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .Main-Slider {  
+        position: relative;
+        padding-top: 0;
+        width: 100%;
     }
     .Main-Slider {
-        align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         display: flex;  
         position: relative;
         padding-top: 0;
         margin-right: 0;
     }
+
 }   
 
 @media screen and (max-width:430px) {
