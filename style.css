@@ -829,12 +829,19 @@ button a {
     gap: 70px;
 }
 
-.review-content {
+/* .review-content {
+    height: 450px;
     background-color: gainsboro;
     border-radius: 20px;
     padding: 20px;
-    padding-bottom: 50px;
     color: gray;
+} */
+
+.review-content {
+    height: 440px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .review-content  img {
@@ -846,8 +853,8 @@ button a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15px;
-    font-size: 25px;
+    padding-top: 10px;
+    font-size: 20px;
     font-weight: 500;
     color: black;
 }
@@ -856,6 +863,7 @@ button a {
     display: flex;
     justify-content: left;
     align-items: center;
+    padding-top: 10px;
 }
 
 .user img {
@@ -864,6 +872,7 @@ button a {
 
 .user-text h2 {
     color: black;
+    font-size: 25px;
 }
 
 .user-text {
