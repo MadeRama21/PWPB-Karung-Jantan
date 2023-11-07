@@ -190,7 +190,7 @@ header {
     color: rgb(216, 206, 206);
 }
 .landing {
-padding: 16rem 0 1rem 7rem;
+padding: 20rem 0 1rem 7rem;
 display: block;
 }
 .T-Product {
@@ -203,7 +203,7 @@ display: block;
     letter-spacing: 2px;
 }
 .landing h1 {
-    width: 80%;
+    width: 65%;
     font-size: 3rem;
     font-family: LemonMilk;
     letter-spacing: 2px;
@@ -215,7 +215,7 @@ display: block;
 }
 
 .landing p {
-    width: 85%;
+    width: 78%;
     letter-spacing: 2px;
     line-height: 25px;
 }
@@ -832,6 +832,7 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 30px;
     gap: 70px;
 }
 
@@ -852,7 +853,8 @@ button a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 15px;
+    padding-top: 15px;
+    font-size: 25px;
     font-weight: 500;
     color: black;
 }
@@ -867,13 +869,14 @@ button a {
     width: 50px;
 }
 
-.user-text h1 {
+.user-text h2 {
     color: black;
 }
 
 .user-text {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .star {
@@ -1146,6 +1149,9 @@ footer {
     .landing {
     display: block; 
     padding: 3rem 1.8rem 0 1.8rem;  
+    }
+    .content-indx-1 {
+        padding-top: 4rem;
     }
     .landing h1 {
         width: 100%;
