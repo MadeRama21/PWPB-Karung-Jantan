@@ -13,10 +13,6 @@ window.addEventListener("scroll", () => {
     console.log(window.scrollY);    
     const windowPosition = window.scrollY > 0;
     navbar.classList.toggle("scrolling-active", windowPosition);
-    navLinks.forEach(link => {
-        link.style.pointerEvents = menunav.classList.contains("menu-active") ? "auto" : "none";
-    });
-
 });
 
 
