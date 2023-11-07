@@ -608,7 +608,7 @@ button a {
 }
 
 .satu {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .wrapper,
@@ -616,7 +616,9 @@ button a {
 .wrapper-dua,
 .wrapper-tiga,
 .wrapper-empat,
-.wrapper-lima {
+.wrapper-lima,
+.wrapper-enam,
+.wrapper-tujuh {
     margin-top: 1rem;
     /* margin-bottom: 6//rem; */
     display: flex;
@@ -632,7 +634,9 @@ button a {
 .wrapper-dua i,
 .wrapper-tiga i,
 .wrapper-empat i,
-.wrapper-lima i {
+.wrapper-lima i,
+.wrapper-enam i,
+.wrapper-tujuh i {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -647,41 +651,25 @@ button a {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
 }
 
-.wrapper i:first-child {
-    left: -22px;
-}
-.wrapper-satu i:first-child {
-    left: -22px;
-}
-.wrapper-dua i:first-child {
-    left: -22px;
-}
-.wrapper-tiga i:first-child {
-    left: -22px;
-}
-.wrapper-empat i:first-child {
-    left: -22px;
-}
-.wrapper-lima i:first-child {
+.wrapper i:first-child,
+.wrapper-satu i:first-child,
+.wrapper-dua i:first-child,
+.wrapper-tiga i:first-child,
+.wrapper-empat i:first-child,
+.wrapper-lima i:first-child,
+.wrapper-enam i:first-child,
+.wrapper-tujuh i:first-child {
     left: -22px;
 }
 
-.wrapper i:last-child {
-    right: -22px;
-}
-.wrapper-satu i:last-child {
-    right: -22px;
-}
-.wrapper-dua i:last-child {
-    right: -22px;
-}
-.wrapper-tiga i:last-child {
-    right: -22px;
-}
-.wrapper-empat i:last-child {
-    right: -22px;
-}
-.wrapper-lima i:last-child {
+.wrapper i:last-child,
+.wrapper-satu i:last-child,
+.wrapper-dua i:last-child,
+.wrapper-tiga i:last-child,
+.wrapper-empat i:last-child,
+.wrapper-lima i:last-child,
+.wrapper-enam i:last-child,
+.wrapper-tujuh i:last-child {
     right: -22px;
 }
 
@@ -691,7 +679,9 @@ button a {
 .wrapper-dua .carousel,
 .wrapper-tiga .carousel,
 .wrapper-empat .carousel,
-.wrapper-lima .carousel {
+.wrapper-lima .carousel,
+.wrapper-enam .carousel,
+.wrapper-tujuh .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -790,7 +780,9 @@ button a {
     .wrapper-dua,
     .wrapper-tiga,
     .wrapper-empat,
-    .wrapper-lima {
+    .wrapper-lima,
+    .wrapper-enam,
+    .wrapper-tujuh {
         margin-top: 1rem;
     }
 
@@ -799,7 +791,9 @@ button a {
     .wrapper-dua .carousel,
     .wrapper-tiga .carousel,
     .wrapper-empat .carousel,
-    .wrapper-lima .carousel {
+    .wrapper-lima .carousel,
+    .wrapper-enam .carousel,
+    .wrapper-tujuh .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
@@ -808,11 +802,11 @@ button a {
     }
 
     .card .list h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .card .list span {
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: left;
         justify-content: left;
     }
@@ -830,7 +824,7 @@ button a {
     }
 
     .main h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .wrapper,
@@ -838,7 +832,9 @@ button a {
     .wrapper-dua,
     .wrapper-tiga,
     .wrapper-empat,
-    .wrapper-lima {
+    .wrapper-lima,
+    .wrapper-enam,
+    .wrapper-tujuh {
         margin-top: 1rem;
     }
 
@@ -847,7 +843,9 @@ button a {
     .wrapper-dua .carousel,
     .wrapper-tiga .carousel,
     .wrapper-empat .carousel,
-    .wrapper-lima .carousel {
+    .wrapper-lima .carousel,
+    .wrapper-enam .carousel,
+    .wrapper-tujuh .carousel {
         grid-auto-columns: 100%;
     }
 
@@ -856,11 +854,11 @@ button a {
     }
 
     .card .list h3 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     
     .card .list span {
-        font-size: .8rem;
+        font-size: .9rem;
         text-align: left;
         justify-content: left;
     }
