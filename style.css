@@ -602,9 +602,10 @@ button a {
 .wrapper-satu,
 .wrapper-dua,
 .wrapper-tiga,
-.wrapper-empat {
-    margin-top: 2.8rem;
-    margin-bottom: 5rem;
+.wrapper-empat,
+.wrapper-lima {
+    margin-top: 1rem;
+    /* margin-bottom: 6//rem; */
     display: flex;
     /* max-width: 1500px; */
     width: 100%;
@@ -617,7 +618,8 @@ button a {
 .wrapper-satu i,
 .wrapper-dua i,
 .wrapper-tiga i,
-.wrapper-empat i {
+.wrapper-empat i,
+.wrapper-lima i {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -647,6 +649,9 @@ button a {
 .wrapper-empat i:first-child {
     left: -22px;
 }
+.wrapper-lima i:first-child {
+    left: -22px;
+}
 
 .wrapper i:last-child {
     right: -22px;
@@ -663,12 +668,17 @@ button a {
 .wrapper-empat i:last-child {
     right: -22px;
 }
+.wrapper-lima i:last-child {
+    right: -22px;
+}
+
 
 .wrapper .carousel,
 .wrapper-satu .carousel,
 .wrapper-dua .carousel,
 .wrapper-tiga .carousel,
-.wrapper-empat .carousel {
+.wrapper-empat .carousel,
+.wrapper-lima .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -766,7 +776,8 @@ button a {
     .wrapper-satu,
     .wrapper-dua,
     .wrapper-tiga,
-    .wrapper-empat {
+    .wrapper-empat,
+    .wrapper-lima {
         margin-top: 1rem;
     }
 
@@ -774,7 +785,8 @@ button a {
     .wrapper-satu .carousel,
     .wrapper-dua .carousel,
     .wrapper-tiga .carousel,
-    .wrapper-empat .carousel {
+    .wrapper-empat .carousel,
+    .wrapper-lima .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
@@ -812,7 +824,8 @@ button a {
     .wrapper-satu,
     .wrapper-dua,
     .wrapper-tiga,
-    .wrapper-empat {
+    .wrapper-empat,
+    .wrapper-lima {
         margin-top: 1rem;
     }
 
@@ -820,7 +833,8 @@ button a {
     .wrapper-satu .carousel,
     .wrapper-dua .carousel,
     .wrapper-tiga .carousel,
-    .wrapper-empat .carousel {
+    .wrapper-empat .carousel,
+    .wrapper-lima .carousel {
         grid-auto-columns: 100%;
     }
 
