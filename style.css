@@ -900,7 +900,7 @@ button a {
 } */
 
 .review-content {
-    height: 440px;
+    height: 430px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
     border-radius: 20px;
     padding: 20px;
@@ -916,7 +916,7 @@ button a {
     flex-direction: column;
     justify-content: center;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: black;
 }
