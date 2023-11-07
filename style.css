@@ -539,7 +539,7 @@ button a {
     letter-spacing: 4px;
 }
 
-/* Product Page */
+/* PRODUCT PAGE */
 .title h1 {
     align-items: center;
     text-align: center;
@@ -740,11 +740,11 @@ button a {
 
 @media screen and (max-width: 900px) {
     .title h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .title h1::after {
-        top: 13.5rem;
+        top: 13.9rem;
     }
 
     .main h2 {
@@ -783,6 +783,14 @@ button a {
 }
 
 @media screen and (max-width: 600px) {
+    .title h1 {
+        font-size: 2.2rem;
+    }
+
+    .title h1::after {
+        top: 12.9rem;
+    }
+
     .main h2 {
         font-size: 1.5rem;
     }
@@ -804,11 +812,11 @@ button a {
     }
 
     .card .img img {
-        width: 72%;
+        width: 76%;
     }
 
     .card .list h3 {
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
     
     .card .list span {
@@ -817,10 +825,9 @@ button a {
         justify-content: left;
     }
 }
+/* PRODUCT PAGE */
 
 /* Review-timmy */
-
-
 .review-all {
     display: flex;
     flex-wrap: wrap;
@@ -873,7 +880,6 @@ button a {
     display: flex;
     flex-direction: row;
 }
-
 /* Review end */
 
 /* Footer */
