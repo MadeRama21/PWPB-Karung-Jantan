@@ -626,9 +626,6 @@ button a {
     transform: translateY(-50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
 }
-<<<<<<< HEAD
-/* Review */
-=======
 
 .wrapper i:first-child {
     left: -22px;
@@ -822,7 +819,7 @@ button a {
 }
 
 /* Review-timmy */
->>>>>>> 04839c06ddaf898709d0ef3f2ea1014d0dcb1010
+
 
 .review-all {
     display: flex;
