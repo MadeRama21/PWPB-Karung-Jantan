@@ -1702,6 +1702,9 @@ footer {
        font-size: 1.5rem;
     
       }
+      .footer-S {
+        justify-content: left;
+      }
   
       .footer-S a {
         text-decoration: none;
@@ -1987,6 +1990,9 @@ footer {
     .footer-S a i{
        font-size: 1.5rem;
        gap: 14px;
+    }
+    .footer-S {
+        justify-content: left;
     }
     .footer-S a {
         text-decoration: none;
