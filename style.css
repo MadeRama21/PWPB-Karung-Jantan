@@ -825,6 +825,7 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 30px;
     gap: 70px;
 }
 
@@ -845,7 +846,8 @@ button a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 15px;
+    padding-top: 15px;
+    font-size: 25px;
     font-weight: 500;
     color: black;
 }
@@ -860,13 +862,14 @@ button a {
     width: 50px;
 }
 
-.user-text h1 {
+.user-text h2 {
     color: black;
 }
 
 .user-text {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .star {
