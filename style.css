@@ -1770,6 +1770,10 @@ footer {
         align-items: center;
     }
 
+    .about-content img {
+        border-radius:  20px;
+    }
+
     .about-text {
         margin: 0;
         margin-top: 20px;
