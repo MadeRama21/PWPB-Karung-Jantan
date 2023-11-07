@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: Metropolis2;
+    src: url(Font/Metropolis-Regular.otf);
+}
+
+@font-face {
     font-family: Metropolis;
     src: url(Font/Metropolis-Bold.otf);
 }
