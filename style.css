@@ -626,6 +626,9 @@ button a {
     transform: translateY(-50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
 }
+<<<<<<< HEAD
+/* Review */
+=======
 
 .wrapper i:first-child {
     left: -22px;
@@ -819,8 +822,62 @@ button a {
 }
 
 /* Review-timmy */
+>>>>>>> 04839c06ddaf898709d0ef3f2ea1014d0dcb1010
 
-/* Review-timmy-end */
+.review-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.review-content {
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    color: gray;
+}
+
+.review-content  img {
+    width: 300px;
+}
+
+.review-text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.user {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.user img {
+    width: 50px;
+}
+
+.user-text h1 {
+    color: black;
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Review end */
 
 /* Footer */
 footer {
