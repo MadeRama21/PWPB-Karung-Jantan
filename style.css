@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: Metropolis2;
+    src: url(Font/Metropolis-Medium.otf);
+}
+
+@font-face {
     font-family: Metropolis;
     src: url(Font/Metropolis-Bold.otf);
 }
@@ -169,10 +174,10 @@ header {
 }
 .box-content p {
     /* margin-top: 1rem; */
-    color: white;
-    font-family: Metropolis;
+    color: rgba(255, 255, 255, 0.847);
+    font-family: Metropolis2;
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 50;
 }
 
 
@@ -199,6 +204,8 @@ header {
 .landing {
 padding: 17rem 0 1rem 7rem;
 display: block;
+align-items: center;
+text-align: center;
 }
 .T-Product {
     padding: 0 0 0 7rem;
@@ -211,6 +218,7 @@ display: block;
 }
 .landing h1 {
     width: 65%;
+    text-align: left;
     font-size: 3rem;
     font-family: LemonMilk;
     letter-spacing: 2px;
@@ -225,6 +233,7 @@ display: block;
     width: 78%;
     letter-spacing: 2px;
     line-height: 25px;
+    text-align: left;
 }
 .Main-Slider .slider {
     display: grid;
