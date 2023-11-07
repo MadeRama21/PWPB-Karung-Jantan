@@ -1,6 +1,7 @@
 //NAVIGATION BAR
 const menubar = document.querySelector(".menu-bar");
 const menunav = document.querySelector(".nav-kiri");
+const navLinks = document.querySelectorAll('.nav-kiri a');
 
 menubar.addEventListener("click", () => {
     menunav.classList.toggle("menu-active");
@@ -12,5 +13,10 @@ window.addEventListener("scroll", () => {
     console.log(window.scrollY);    
     const windowPosition = window.scrollY > 0;
     navbar.classList.toggle("scrolling-active", windowPosition);
+    navLinks.forEach(link => {
+        link.style.pointerEvents = menunav.classList.contains("menu-active") ? "auto" : "none";
+    });
 
 });
+
+
