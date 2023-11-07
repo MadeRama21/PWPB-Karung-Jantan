@@ -349,7 +349,7 @@ display: block;
     font-family: LemonMilk;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
+    background:-webkit-linear-gradient(15deg, #000000, #696980, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -364,7 +364,7 @@ display: block;
     font-weight: 700;
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
-    background:-webkit-linear-gradient(15deg, #000000, #0000be, #000000);
+    background:-webkit-linear-gradient(15deg, #000000, #696980, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
