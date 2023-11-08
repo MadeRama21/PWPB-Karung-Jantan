@@ -1162,7 +1162,7 @@ footer {
        position: absolute;
        flex-direction: column;
        justify-content: center;
-       display: flex;
+       display: none;
        padding: 2rem 0 2rem 0;
        align-items: center;
        margin-top: 2.8rem;
@@ -1182,6 +1182,7 @@ footer {
        background-color: white;
     }
     nav .box-nav .nav-kiri.menu-active {
+        display: flex;
         opacity: 1;
         border-top: 1px solid rgb(0, 0, 0);
     }
@@ -1491,6 +1492,9 @@ footer {
 }   
 
 @media screen and (max-width:430px) {
+    /* .nav-kiri li a{
+        display: none;
+    } */
     nav .box-nav .wadah-nav .menu-bar i {
         display: block;
     }
@@ -1502,7 +1506,7 @@ footer {
        position: absolute;
        flex-direction: column;
        justify-content: center;
-       display: flex;
+       display: none;
        padding: 2rem 0 2rem 0;
        align-items: center;
        margin-top: 2.8rem;
@@ -1522,8 +1526,12 @@ footer {
        background-color: white;
     }
     nav .box-nav .nav-kiri.menu-active {
+        display: flex;
         opacity: 1;
         border-top: 1px solid rgb(0, 0, 0);
+    }
+    nav .box-nav .nav-kiri.menu-active  .nav-kiri li a {
+        display: block;
     }
     nav .logo img {
         width: 7rem;
@@ -1783,6 +1791,35 @@ footer {
 /* HANDPHONE */
 @media screen and (max-width:600px) {
     /* ABOUT */
+    nav .box-nav .wadah-nav .nav-kiri {
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        padding: 2rem 0 2rem 0;
+        align-items: center;
+        margin-top: 2.8rem;
+        right: 45%;
+        color: black;
+        transform: translateX(45%);
+        -webkit-transform: translateX(45%);
+        -moz-transform: translateX(45%);
+        -ms-transform: translateX(45%);
+        -o-transform: translateX(45%);
+         opacity: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        background-color: white;
+     }
+     nav .box-nav .nav-kiri.menu-active {
+         display: flex;
+         opacity: 1;
+         border-top: 1px solid rgb(0, 0, 0);
+     }
     .about-content {
         display: flex;
         flex-direction: column;
