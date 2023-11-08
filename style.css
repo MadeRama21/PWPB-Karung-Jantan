@@ -1785,35 +1785,36 @@ footer {
 /* HANDPHONE */
 @media screen and (max-width:600px) {
     /* ABOUT */
-    nav .box-nav .wadah-nav .nav-kiri {
-        width: 100%;
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        display: none;
-        padding: 2rem 0 2rem 0;
-        align-items: center;
-        margin-top: 2.8rem;
-        right: 45%;
-        color: black;
-        transform: translateX(45%);
-        -webkit-transform: translateX(45%);
-        -moz-transform: translateX(45%);
-        -ms-transform: translateX(45%);
-        -o-transform: translateX(45%);
-         opacity: 0;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        background-color: white;
-     }
-     nav .box-nav .nav-kiri.menu-active {
-         display: flex;
-         opacity: 1;
-         border-top: 1px solid rgb(0, 0, 0);
-     }
+      nav .box-nav .wadah-nav .nav-kiri {
+       width: 100%;
+       position: absolute;
+       flex-direction: column;
+       justify-content: center;
+       display: none;
+       padding: 2rem 0 2rem 0;
+       align-items: center;
+       margin-top: 2.8rem;
+       right: 45%;
+       color: black;
+       transform: translateX(45%);
+       -webkit-transform: translateX(45%);
+       -moz-transform: translateX(45%);
+       -ms-transform: translateX(45%);
+       -o-transform: translateX(45%);
+        opacity: 0;
+       transition: all 0.3s ease;
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       background-color: white;
+    }
+    nav .box-nav .nav-kiri.menu-active {
+        display: flex;
+        opacity: 1;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
     .about-content {
         display: flex;
         flex-direction: column;
@@ -1974,6 +1975,10 @@ footer {
     .main-contact a>i{
         font-size: 60px;
     }
+    .box-content p {
+        font-size: 1rem;
+        color: white;
+    }
     .box-content {
         padding-top: 35vh;
         padding-left: 2rem;
@@ -1982,7 +1987,7 @@ footer {
     .landing h1 {
         width: 100%;
         text-align: left;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: LemonMilk;
         letter-spacing: 2px;
         font-family: 'Montserrat', sans-serif;
@@ -1994,7 +1999,7 @@ footer {
     
     .landing p {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: justify;
         letter-spacing: 2px;
         line-height: 25px;
@@ -2005,14 +2010,14 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         letter-spacing: 2px;
-        width: 150px;
-        height: 50px;
+        width: 130px;
+        height: 40px;
         margin-top: 20px;
         background-color: #36454F;
         border-style: none;
         border-radius: 5px;
         transition: 0.3s;
-        font-size: 1rem;
+        font-size: 0.8rem;
         
     }
     footer {
