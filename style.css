@@ -815,7 +815,7 @@ button a {
     }
 
     .card .img img {
-        width: 76%;
+        width: 73%;
     }
 
     .card .list h3 {
@@ -867,7 +867,7 @@ button a {
     }
 
     .card .img img {
-        width: 76%;
+        width: 50%;
     }
 
     .card .list h3 {
@@ -878,6 +878,12 @@ button a {
         font-size: .9rem;
         text-align: left;
         justify-content: left;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .card .img img {
+        width: 66%;
     }
 }
 /* PRODUCT PAGE */
