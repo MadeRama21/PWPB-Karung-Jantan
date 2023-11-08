@@ -1205,7 +1205,7 @@ footer {
     .info {
         display: flex;
         flex-direction: column;
-        padding-top: 180px;
+        padding-top: 525px;
     }
     .main-content-index {
         min-height: 100vh;
