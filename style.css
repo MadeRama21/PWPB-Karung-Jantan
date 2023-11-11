@@ -265,13 +265,10 @@ header {
 .T-Product {
     padding: 0 0 0 7rem;
 }
-<<<<<<< HEAD
+
 .T-Product a {
     text-decoration: none;
 }
-=======
-
->>>>>>> b5620630e0eba5817e2ba7039c8842a89824ee85
 .T-Product a button {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -1382,13 +1379,8 @@ footer {
     }
 
     .landing {
-<<<<<<< HEAD
     display: block; 
     padding: 4rem 4rem 1rem 4rem;  
-=======
-        display: block;
-        padding: 4rem 4rem 3rem 4rem;
->>>>>>> b5620630e0eba5817e2ba7039c8842a89824ee85
     }
 
     .content-indx-1 {
@@ -1424,12 +1416,7 @@ footer {
         border-radius: 5px;
         transition: 0.3s;
         font-size: 1rem;
-<<<<<<< HEAD
         margin-right: 0.5rem;
-        
-=======
-
->>>>>>> b5620630e0eba5817e2ba7039c8842a89824ee85
     }
 
     .landing p {
