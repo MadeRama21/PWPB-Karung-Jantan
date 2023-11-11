@@ -567,9 +567,14 @@ button a {
     text-align: center;
 }
 
+.kel-content a {
+    text-decoration: none;
+}
+
 .kel-content h3 {
     margin-top: 20px;
     font-size: 0.9rem;
+    color: #000000;
     font-family: LemonMilk;
     letter-spacing: 4px;
 }
