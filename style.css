@@ -1191,8 +1191,7 @@ footer {
     height: 3rem;
     background-color: rgba(217, 217, 217, 0.2);
     border-radius: 50%;
-
-
+    transition: .2s ease-in;
 }
 
 .footer-S a:hover {
