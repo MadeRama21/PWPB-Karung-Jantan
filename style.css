@@ -854,6 +854,7 @@ button a {
 
 .card .button1 a {
     display: flex;
+    letter-spacing: 2px;
     font-family: LemonMilk;
     flex-direction: column;
     justify-content: center;
@@ -919,6 +920,30 @@ button a {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
+    .wrapper i:first-child,
+    .wrapper-satu i:first-child,
+    .wrapper-dua i:first-child,
+    .wrapper-tiga i:first-child,
+    .wrapper-empat i:first-child,
+    .wrapper-lima i:first-child,
+    .wrapper-enam i:first-child,
+    .wrapper-tujuh i:first-child {
+        left: -65px;
+        z-index: 1;
+    }
+
+    .wrapper i:last-child,
+    .wrapper-satu i:last-child,
+    .wrapper-dua i:last-child,
+    .wrapper-tiga i:last-child,
+    .wrapper-empat i:last-child,
+    .wrapper-lima i:last-child,
+    .wrapper-enam i:last-child,
+    .wrapper-tujuh i:last-child {
+        right: -65px;
+        z-index: 1;
+    }
+
     .card .img img {
         width: 73%;
     }
@@ -970,6 +995,30 @@ button a {
     .wrapper-enam .carousel,
     .wrapper-tujuh .carousel {
         grid-auto-columns: 100%;
+    }
+
+    .wrapper i:first-child,
+    .wrapper-satu i:first-child,
+    .wrapper-dua i:first-child,
+    .wrapper-tiga i:first-child,
+    .wrapper-empat i:first-child,
+    .wrapper-lima i:first-child,
+    .wrapper-enam i:first-child,
+    .wrapper-tujuh i:first-child {
+        left: -22px;
+        z-index: 1;
+    }
+
+    .wrapper i:last-child,
+    .wrapper-satu i:last-child,
+    .wrapper-dua i:last-child,
+    .wrapper-tiga i:last-child,
+    .wrapper-empat i:last-child,
+    .wrapper-lima i:last-child,
+    .wrapper-enam i:last-child,
+    .wrapper-tujuh i:last-child {
+        right: -22px;
+        z-index: 1;
     }
 
     .card .img img {
