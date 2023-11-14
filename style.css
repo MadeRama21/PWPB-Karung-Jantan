@@ -211,13 +211,6 @@ header {
     font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.847);
 }
-/* .info i:nth-of-type(1){
-    transform: rotate(-45deg);
-} */
-  
-.info i :nth-of-type(2){
-    transform: rotate(45deg);
-}
 @keyframes move{
     0%{margin-top:0;}
     50%{margin-top:40px;}
@@ -231,9 +224,6 @@ header {
 .info a{
     text-decoration: none;
 }
-
-
-
 
 /* Landing pages end */
 
