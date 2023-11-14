@@ -517,7 +517,7 @@ button a {
     flex-direction: row;
     align-items: center;
     margin-top: 15px;
-    margin-left: 26px;
+    /* margin-left: 26px; */
 }
 
 .services-content p {
